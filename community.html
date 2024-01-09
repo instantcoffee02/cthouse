@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="SemiColonWeb">
+    <meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+    <!-- Font Imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    -->
+    <!-- 加入Noto sans TC字型 所有中文-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <!-- 加入inter字型 所有英文、數字-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;family=Noto+Sans+TC:wght@300;400&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <!-- Core Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Icons-->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <!-- 中信相關 CSS-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/houseList.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/layout_24.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Document Title
+    =============================================
+    -->
+    <title>Home - Shop | Canvas</title>
+    <style>
+      .revo-slider-emphasis-text {
+      font-size: 58px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Poppins', sans-serif;
+      padding: 15px 20px;
+      border-top: 2px solid #FFF;
+      border-bottom: 2px solid #FFF;
+      }
+      .revo-slider-desc-text {
+      font-size: 20px;
+      font-family: 'Lato', sans-serif;
+      width: 650px;
+      text-align: center;
+      line-height: 1.5;
+      }
+      .revo-slider-caps-text {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-family: 'Poppins', sans-serif;
+      }
+      .tp-video-play-button { display: none !important; }
+      .tp-caption { white-space: nowrap; }
+    </style>
+    <!-- 載入Jquery-->
+    <script src="jq/jquery-3.5.1.min.js"></script>
+    <!-- Mouse滑到物件上的JS-->
+    <script>
+      $(document).ready(function() {
+      $('.object-virtical-list-item').on('mouseover', function() {
+      overobject($(this));
+      //console.log($(this));
+      $(this).find('.buy-object-info').addClass('mouse-over');
+      //$(this).find('.ct-green-text-button').show();
+      $(this).find('.ct-green-button').show();
+      }).on('mouseout', function() {
+      overobject($(this));
+      //console.log($(this));
+      $(this).find('.buy-object-info').removeClass('mouse-over');
+      //$(this).find('.ct-green-text-button').hide();
+      $(this).find('.ct-green-button').hide();
+      })
+      }); //ready
+      function overobject(element) {
+      //var onObject = element.css('background','var(--cnvs-contrast-100)');
+      var objName=element.find('.object-info-top-title').text();
+      console.log(objName);
+      }
+    </script>
+  </head>
+  <body class="stretched">
+    <!--
+    Document Wrapper
+    =============================================
+    
+    
+    -->
+    <div id="wrapper">
+      <div class="w-1200">
+        <div class="bgcircle2 pconly1"></div>
+      </div>
+      <!-- Top Bar-->
+      <div class="pconly" id="top-bar" style="height: 42px;background: #fff;z-index: 6;">
+        <div class="container top-container">
+          <div class="about-cthouse">
+            <!-- TopMenu關於中信區塊-->
+            <div class="top-links on-click">
+              <ul class="top-links-container">
+                <li class="top-links-item"><a href="https://www.cthouse.com.tw/about/cthousing/">關於中信</a></li>
+                <li class="top-links-item"><a href="https://www.cthouse.com.tw/about/csrindex/">ESG公益</a></li>
+                <li class="top-links-item"><a href="https://www.cthouse.com.tw/about/joinus.html">加盟中信</a></li>
+              </ul>
+            </div>
+            <!-- .top-links end-->
+            <!-- TopMenu全站廣告區塊top-ad-->
+            <div class="top-ad">
+              <!-- 廣告區塊Icon 待確認可否改成從後台選擇-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <mask id="mask0_5825_59891" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+                  <rect width="18" height="18" fill="#D9D9D9"></rect>
+                </mask>
+                <g mask="url(#mask0_5825_59891)">
+                  <path d="M14.25 9.74922H12.75C12.5375 9.74922 12.3594 9.67734 12.2156 9.53359C12.0719 9.38984 12 9.21172 12 8.99922C12 8.78672 12.0719 8.60859 12.2156 8.46484C12.3594 8.32109 12.5375 8.24922 12.75 8.24922H14.25C14.4625 8.24922 14.6406 8.32109 14.7844 8.46484C14.9281 8.60859 15 8.78672 15 8.99922C15 9.21172 14.9281 9.38984 14.7844 9.53359C14.6406 9.67734 14.4625 9.74922 14.25 9.74922ZM10.95 12.5992C11.075 12.4242 11.2375 12.3242 11.4375 12.2992C11.6375 12.2742 11.825 12.3242 12 12.4492L13.2 13.3492C13.375 13.4742 13.475 13.6367 13.5 13.8367C13.525 14.0367 13.475 14.2242 13.35 14.3992C13.225 14.5742 13.0625 14.6742 12.8625 14.6992C12.6625 14.7242 12.475 14.6742 12.3 14.5492L11.1 13.6492C10.925 13.5242 10.825 13.3617 10.8 13.1617C10.775 12.9617 10.825 12.7742 10.95 12.5992ZM13.2 4.64922L12 5.54922C11.825 5.67422 11.6375 5.72422 11.4375 5.69922C11.2375 5.67422 11.075 5.57422 10.95 5.39922C10.825 5.22422 10.775 5.03672 10.8 4.83672C10.825 4.63672 10.925 4.47422 11.1 4.34922L12.3 3.44922C12.475 3.32422 12.6625 3.27422 12.8625 3.29922C13.0625 3.32422 13.225 3.42422 13.35 3.59922C13.475 3.77422 13.525 3.96172 13.5 4.16172C13.475 4.36172 13.375 4.52422 13.2 4.64922ZM5.25 11.2492H3C2.7875 11.2492 2.60937 11.1773 2.46562 11.0336C2.32187 10.8898 2.25 10.7117 2.25 10.4992V7.49922C2.25 7.28672 2.32187 7.10859 2.46562 6.96484C2.60937 6.82109 2.7875 6.74922 3 6.74922H5.25L7.725 4.27422C7.9625 4.03672 8.23437 3.98359 8.54062 4.11484C8.84687 4.24609 9 4.48047 9 4.81797V13.1805C9 13.518 8.84687 13.7523 8.54062 13.8836C8.23437 14.0148 7.9625 13.9617 7.725 13.7242L5.25 11.2492ZM7.5 6.63672L5.8875 8.24922H3.75V9.74922H5.8875L7.5 11.3617V6.63672Z" fill="#ABB5BE"></path>
+                </g>
+              </svg>
+              <!-- 後臺設定的全站廣告文字-->
+              <label id="marquee"><a href="">系統大數據為你精算解析出最符合條件的高CP值好屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋</a><a href="">dfadfadsfadsfdsfadsfasdfasd屋</a><a href="">dfdafafdsafasdfasdf屋屋</a><a href="">系統大數據為你精算解析出最符合條件的高CP值好屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋</a><a href="">系統大數據為你精算解析出最符合條件的高CP值好屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋屋</a></label>
+            </div>
+            <div class="top-func">
+              <!--
+              Top Links
+              =============================================
+              -->
+              <div class="top-links on-click">
+                <ul class="top-links-container">
+                  <li class="top-links-item"><a href="#">
+                      <!-- 訂閱電子報svg-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                        <mask id="mask0_5836_41809" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="18">
+                          <rect x="0.5" width="18" height="18" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_5836_41809)">
+                          <path d="M2.74931 7.5C2.53681 7.5 2.35868 7.425 2.21493 7.275C2.07118 7.125 2.01181 6.95 2.03681 6.75C2.12431 5.925 2.33993 5.13437 2.68368 4.37812C3.02743 3.62187 3.48056 2.94375 4.04306 2.34375C4.18056 2.20625 4.35556 2.1375 4.56806 2.1375C4.78056 2.1375 4.96181 2.2125 5.11181 2.3625C5.24931 2.5 5.31806 2.66875 5.31806 2.86875C5.31806 3.06875 5.24931 3.25 5.11181 3.4125C4.67431 3.8875 4.32118 4.40312 4.05243 4.95937C3.78368 5.51562 3.61181 6.1125 3.53681 6.75C3.51181 6.9625 3.42743 7.14062 3.28368 7.28437C3.13993 7.42812 2.96181 7.5 2.74931 7.5ZM16.2493 7.5C16.0493 7.5 15.8743 7.42812 15.7243 7.28437C15.5743 7.14062 15.4868 6.9625 15.4618 6.75C15.3868 6.1125 15.2149 5.51562 14.9462 4.95937C14.6774 4.40312 14.3243 3.8875 13.8868 3.4125C13.7493 3.25 13.6806 3.06875 13.6806 2.86875C13.6806 2.66875 13.7556 2.5 13.9056 2.3625C14.0556 2.2125 14.2337 2.1375 14.4399 2.1375C14.6462 2.1375 14.8181 2.20625 14.9556 2.34375C15.5181 2.94375 15.9712 3.62187 16.3149 4.37812C16.6587 5.13437 16.8743 5.925 16.9618 6.75C16.9868 6.95 16.9274 7.125 16.7837 7.275C16.6399 7.425 16.4618 7.5 16.2493 7.5ZM4.24931 14.25C4.03681 14.25 3.85868 14.1781 3.71493 14.0344C3.57118 13.8906 3.49931 13.7125 3.49931 13.5C3.49931 13.2875 3.57118 13.1094 3.71493 12.9656C3.85868 12.8219 4.03681 12.75 4.24931 12.75H4.99931V7.5C4.99931 6.4625 5.31181 5.54062 5.93681 4.73437C6.56181 3.92812 7.37431 3.4 8.37431 3.15V2.625C8.37431 2.3125 8.48368 2.04688 8.70243 1.82812C8.92118 1.60937 9.18681 1.5 9.49931 1.5C9.81181 1.5 10.0774 1.60937 10.2962 1.82812C10.5149 2.04688 10.6243 2.3125 10.6243 2.625V3.15C11.6243 3.4 12.4368 3.92812 13.0618 4.73437C13.6868 5.54062 13.9993 6.4625 13.9993 7.5V12.75H14.7493C14.9618 12.75 15.1399 12.8219 15.2837 12.9656C15.4274 13.1094 15.4993 13.2875 15.4993 13.5C15.4993 13.7125 15.4274 13.8906 15.2837 14.0344C15.1399 14.1781 14.9618 14.25 14.7493 14.25H4.24931ZM9.49931 16.5C9.08681 16.5 8.73368 16.3531 8.43993 16.0594C8.14618 15.7656 7.99931 15.4125 7.99931 15H10.9993C10.9993 15.4125 10.8524 15.7656 10.5587 16.0594C10.2649 16.3531 9.91181 16.5 9.49931 16.5Z" fill="#ABB5BE"></path>
+                        </g>
+                      </svg>                  訂閱電子報</a></li>
+                  <li class="top-links-item"><a href="#">
+                      <!-- 登入svg-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                        <mask id="mask0_5836_41815" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="18">
+                          <rect x="0.5" width="18" height="18" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_5836_41815)">
+                          <path d="M4.8875 12.825C5.525 12.3375 6.2375 11.9531 7.025 11.6719C7.8125 11.3906 8.6375 11.25 9.5 11.25C10.3625 11.25 11.1875 11.3906 11.975 11.6719C12.7625 11.9531 13.475 12.3375 14.1125 12.825C14.55 12.3125 14.8906 11.7312 15.1344 11.0812C15.3781 10.4312 15.5 9.7375 15.5 9C15.5 7.3375 14.9156 5.92187 13.7469 4.75312C12.5781 3.58437 11.1625 3 9.5 3C7.8375 3 6.42187 3.58437 5.25312 4.75312C4.08437 5.92187 3.5 7.3375 3.5 9C3.5 9.7375 3.62187 10.4312 3.86562 11.0812C4.10937 11.7312 4.45 12.3125 4.8875 12.825ZM9.5 9.75C8.7625 9.75 8.14062 9.49687 7.63437 8.99062C7.12812 8.48437 6.875 7.8625 6.875 7.125C6.875 6.3875 7.12812 5.76562 7.63437 5.25937C8.14062 4.75312 8.7625 4.5 9.5 4.5C10.2375 4.5 10.8594 4.75312 11.3656 5.25937C11.8719 5.76562 12.125 6.3875 12.125 7.125C12.125 7.8625 11.8719 8.48437 11.3656 8.99062C10.8594 9.49687 10.2375 9.75 9.5 9.75ZM9.5 16.5C8.4625 16.5 7.4875 16.3031 6.575 15.9094C5.6625 15.5156 4.86875 14.9812 4.19375 14.3062C3.51875 13.6312 2.98437 12.8375 2.59062 11.925C2.19687 11.0125 2 10.0375 2 9C2 7.9625 2.19687 6.9875 2.59062 6.075C2.98437 5.1625 3.51875 4.36875 4.19375 3.69375C4.86875 3.01875 5.6625 2.48437 6.575 2.09062C7.4875 1.69687 8.4625 1.5 9.5 1.5C10.5375 1.5 11.5125 1.69687 12.425 2.09062C13.3375 2.48437 14.1312 3.01875 14.8062 3.69375C15.4812 4.36875 16.0156 5.1625 16.4094 6.075C16.8031 6.9875 17 7.9625 17 9C17 10.0375 16.8031 11.0125 16.4094 11.925C16.0156 12.8375 15.4812 13.6312 14.8062 14.3062C14.1312 14.9812 13.3375 15.5156 12.425 15.9094C11.5125 16.3031 10.5375 16.5 9.5 16.5Z" fill="#ABB5BE"></path>
+                        </g>
+                      </svg>                  登入</a>
+                    <div class="top-links-section">
+                      <form id="top-login" autocomplete="off">
+                        <div class="form-group">
+                          <label>Username</label>
+                          <input class="form-control" type="email" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input class="form-control" type="password" placeholder="Password" required="">
+                        </div>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" id="top-login-checkbox" type="checkbox" value="">
+                          <label class="form-check-label" for="top-login-checkbox">Remember Me</label>
+                        </div>
+                        <button class="btn btn-danger w-100" type="submit">Sign in</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="top-links-item top-member-func"><a href="#">我的收藏與條件</a>
+                    <div class="top-links-section">
+                      <form id="top-login" autocomplete="off">
+                        <div class="form-group">
+                          <label>Username</label>
+                          <input class="form-control" type="email" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input class="form-control" type="password" placeholder="Password" required="">
+                        </div>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" id="top-login-checkbox" type="checkbox" value="">
+                          <label class="form-check-label" for="top-login-checkbox">Remember Me</label>
+                        </div>
+                        <button class="btn btn-danger w-100" type="submit">Sign in</button>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- .top-links end-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #top-bar end-->
+      <!--
+      Header
+      =============================================
+      -->
+      <header id="header">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row">
+              <!--
+              Logo
+              =============================================
+              -->
+              <div id="logo"><a href="index.html"><img class="logo-default" src="img/logo.svg" alt="cthouse Logo" style="height: auto;width:100px;"></a></div>
+              <!-- #logo end-->
+              <div class="primary-menu-trigger">
+                <button class="cnvs-hamburger" type="button" title="Open Mobile Menu"><span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span></button>
+              </div>
+              <!--
+              Primary Navigation
+              =============================================
+              -->
+              <nav class="primary-menu">
+                <ul class="menu-container">
+                  <li class="menu-item mega-menu mega-menu-small"><a class="menu-link" href="#">
+                      <div>買屋</div></a>
+                    <div class="mega-menu-content mega-menu-style-2">
+                      <div class="container">
+                        <div class="row">
+                          <ul class="sub-menu-container mega-menu-column col-lg-6">
+                            <ul class="sub-menu-container">
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/area/">
+                                  <div>區域找屋</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/community/">
+                                  <div>社區找屋</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/map/">
+                                  <div>地圖找屋</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/mrt/">
+                                  <div>捷運找屋</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/cphouse/">
+                                  <div>CP值找屋</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/event/">
+                                  <div>主題找屋</div></a></li>
+                            </ul>
+                          </ul>
+                          <ul class="sub-menu-container mega-menu-column col-lg-6">
+                            <ul class="sub-menu-container">
+                              <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/loan/">
+                                  <div>購屋試算</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/knowledge/">
+                                  <div>買賣知識庫</div></a></li>
+                              <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/knowledge/ourservice/entrust.html">
+                                  <div>交易服務</div></a></li>
+                            </ul>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- .mega-menu end-->
+                  <li class="menu-item"><a class="menu-link" href="#">
+                      <div>售屋</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item"><a class="menu-link" href="https://sell.cthouse.com.tw/">
+                          <div>售屋委託</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/knowledge/ourservice/entrust.html">
+                          <div>中信房屋交易服務</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/about/franchise/">
+                          <div>服務據點</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/knowledge/">
+                          <div>買賣知識庫</div></a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item"><a class="menu-link" href="#">
+                      <div>實價登錄</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item"><a class="menu-link" href="https://price.cthouse.com.tw/">
+                          <div>區域實價登錄</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://buy.cthouse.com.tw/community/">
+                          <div>社區成交行情</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://price.cthouse.com.tw/mrt/">
+                          <div>捷運成交行情</div></a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item"><a class="menu-link" href="#">
+                      <div>租屋</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item"><a class="menu-link" href="https://rent.cthouse.com.tw/area/">
+                          <div>地圖找屋</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://rent.cthouse.com.tw/map/">
+                          <div>區域找屋</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/knowledge/class/rent.html">
+                          <div>買賣知識庫</div></a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/about/joinus.html">
+                      <div>加盟中信</div><span>加盟中信</span></a></li>
+                  <li class="menu-item"><a class="menu-link" href="https://www.cthouse.com.tw/about/franchise/">
+                      <div>服務據點</div><span>服務據點</span></a></li>
+                  <li class="menu-item"><a class="menu-link" href="https://hr.cthouse.com.tw/">
+                      <div>徵才公告</div><span>徵才公告</span></a></li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end-->
+              <form class="top-search-form" action="search.html" method="get">
+                <input class="form-control" type="text" name="q" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end-->
+      <!--
+      Content
+      =============================================
+      -->
+      <section id="content">
+        <div class="content-wrap">
+          <div class="container">
+            <div class="breadcrumb pconly">
+              <div class="breadcrumb-item"><a href="#">買屋</a></div>
+              <div class="breadcrumb-item"><a href="#">台北市</a></div>
+              <div class="breadcrumb-item"><a href="#">中正區</a></div>
+            </div>
+            <!-- 列表頁內容-->
+            <div class="textOnly-title-section">
+              <div class="title-menu-section">
+                <!-- 頁面標題-->
+                <div class="title-section"><span class="title-highlight">社</span><span class="title-dark">區</span></div>
+                <!-- 行動版查詢條件設定欄收合時的條件顯示文字-->
+                <div class="mobile-condition-text mobileonly">
+                  <div class="condition-text">台北市</div>
+                  <div class="condition-text">中山區</div>
+                  <div class="condition-text">中山區</div>
+                  <div class="condition-text">中山區</div>
+                  <div class="condition-text">中山區</div>
+                </div>
+                <!-- 行動版收合/展開 查詢條件功能-->
+                <div class="right-top-btn mobileonly">
+                  <button class="ct-green-text-button">
+                    <div class="text-button-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <path d="M4 4.85L1.26666 7.58334C1.14444 7.70556 1.00555 7.76389 0.849998 7.75834C0.694443 7.75278 0.555554 7.68889 0.433331 7.56667C0.311109 7.44445 0.249998 7.30278 0.249998 7.14167C0.249998 6.98056 0.311109 6.83889 0.433331 6.71667L3.15 4L0.416665 1.26667C0.294443 1.14445 0.236109 1.00278 0.241665 0.841671C0.24722 0.68056 0.311109 0.538893 0.433331 0.416671C0.555554 0.294449 0.69722 0.233337 0.858332 0.233337C1.01944 0.233337 1.16111 0.294449 1.28333 0.416671L4 3.15L6.73333 0.416671C6.85555 0.294449 6.99722 0.233337 7.15833 0.233337C7.31944 0.233337 7.46111 0.294449 7.58333 0.416671C7.70555 0.538893 7.76666 0.68056 7.76666 0.841671C7.76666 1.00278 7.70555 1.14445 7.58333 1.26667L4.85 4L7.58333 6.73334C7.70555 6.85556 7.76666 6.99445 7.76666 7.15C7.76666 7.30556 7.70555 7.44445 7.58333 7.56667C7.46111 7.68889 7.31944 7.75 7.15833 7.75C6.99722 7.75 6.85555 7.68889 6.73333 7.56667L4 4.85Z" fill="#00A99D"></path>
+                      </svg>
+                    </div>									收合
+                  </button>
+                </div>
+                <div class="title-menu pconly">
+                  <div class="title-menu-item">
+                    <div class="title-menu-item-icon"><img src="images/icon/buyIcon1.png"></div><a href="#">社區找屋</a>
+                  </div>
+                  <div class="title-menu-item">
+                    <div class="title-menu-item-icon"><img src="images/icon/buyIcon2.png"></div><a href="#">CP值找屋</a>
+                  </div>
+                  <div class="title-menu-item">
+                    <div class="title-menu-item-icon"><img src="images/icon/buyIcon3.png"></div><a href="#">捷運找屋</a>
+                  </div>
+                  <div class="title-menu-item">
+                    <div class="title-menu-item-icon"><img src="images/icon/buyIcon4.png"></div><a href="#">地圖找屋</a>
+                  </div>
+                </div>
+              </div>
+              <div class="subtitle pconly">Buy yout dream house<br> 尋找適切生活圈、理想社區、高CP值好屋，及便利捷運宅，開啟美好生活！</div>
+              <!-- 列表搜尋區塊-->
+              <div class="page-search-section pconly">
+                <div class="condition-input-group">
+                  <input class="input-condition" placeholder="台北市">
+                  <input class="search-bar" placeholder="關鍵字、房屋編號、街道、社區大樓或學校...">
+                  <button class="ct-green-button">
+                    <div class="button- w-f">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M6.70312 8.50346H3.70312C3.15312 8.50346 2.70312 8.05346 2.70312 7.50346C2.70312 6.95346 3.15312 6.50346 3.70312 6.50346H6.70312C7.25313 6.50346 7.70312 6.95346 7.70312 7.50346C7.70312 8.05346 7.25313 8.50346 6.70312 8.50346ZM6.70312 11.5035H3.70312C3.15312 11.5035 2.70312 11.9535 2.70312 12.5035C2.70312 13.0535 3.15312 13.5035 3.70312 13.5035H6.70312C7.25313 13.5035 7.70312 13.0535 7.70312 12.5035C7.70312 11.9535 7.25313 11.5035 6.70312 11.5035ZM20.5831 17.7935L17.4631 14.6735C16.6031 15.2335 15.5731 15.5535 14.4631 15.4935C12.0931 15.3835 10.0631 13.5335 9.74312 11.1835C9.30312 7.83346 12.1931 5.00346 15.5731 5.57346C17.5231 5.90346 19.1431 7.42346 19.5731 9.35346C19.9031 10.8135 19.5831 12.1735 18.8731 13.2535L22.0031 16.3835C22.3931 16.7735 22.3931 17.4035 22.0031 17.7935C21.6131 18.1835 20.9731 18.1835 20.5831 17.7935ZM17.7031 10.5035C17.7031 8.85346 16.3531 7.50346 14.7031 7.50346C13.0531 7.50346 11.7031 8.85346 11.7031 10.5035C11.7031 12.1535 13.0531 13.5035 14.7031 13.5035C16.3531 13.5035 17.7031 12.1535 17.7031 10.5035ZM3.70312 18.5035H11.7031C12.2531 18.5035 12.7031 18.0535 12.7031 17.5035C12.7031 16.9535 12.2531 16.5035 11.7031 16.5035H3.70312C3.15312 16.5035 2.70312 16.9535 2.70312 17.5035C2.70312 18.0535 3.15312 18.5035 3.70312 18.5035Z" fill="white"></path>
+                      </svg>
+                    </div>                                找屋
+                  </button>
+                </div>
+                <div class="condition-input-group">
+                  <div class="object-list-filter">
+                    <div class="object-list-title">
+                      <div class="gray-600">共有</div>
+                      <div class="basic-green-number">4321</div>
+                      <div class="gray-600">筆物件符合查詢條件</div>
+                    </div>
+                    <!--
+                    <button id="filter1" class="ct-green-outLine-button" onclick="selectFilter(1)">新上架<i class="fa-regular fa-circle-xmark" style="display: none;"></i></button>
+                    <button id="filter2" class="ct-green-outLine-button" onclick="selectFilter(2)">VR環景<i class="fa-regular fa-circle-xmark" style="display: none;"></i></button>
+                    <button id="filter3" class="ct-green-outLine-button" onclick="selectFilter(3)">降價專區<i class="fa-regular fa-circle-xmark" style="display: none;"></i></button>
+                    -->
+                  </div>
+                  <div class="align-right-input">
+                    <button class="ct-green-text-button">
+                      <div class="text-button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                          <mask id="mask0_5183_83307" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+                            <rect x="0.5" y="0.5" width="18" height="18" fill="#D9D9D9"></rect>
+                          </mask>
+                          <g mask="url(#mask0_5183_83307)">
+                            <path d="M8.75 16.25L6.36875 14.1125C5.46875 13.3 4.69687 12.575 4.05312 11.9375C3.40937 11.3 2.87813 10.7 2.45938 10.1375C2.04063 9.575 1.73438 9.03125 1.54063 8.50625C1.34688 7.98125 1.25 7.43125 1.25 6.85625C1.25 5.68125 1.64375 4.70312 2.43125 3.92188C3.21875 3.14062 4.2 2.75 5.375 2.75C6.025 2.75 6.64375 2.8875 7.23125 3.1625C7.81875 3.4375 8.325 3.825 8.75 4.325C9.175 3.825 9.68125 3.4375 10.2688 3.1625C10.8563 2.8875 11.475 2.75 12.125 2.75C13.1375 2.75 13.9875 3.03438 14.675 3.60313C15.3625 4.17188 15.8312 4.8875 16.0812 5.75H14.4875C14.2625 5.25 13.9313 4.875 13.4938 4.625C13.0563 4.375 12.6 4.25 12.125 4.25C11.4875 4.25 10.9375 4.42188 10.475 4.76562C10.0125 5.10938 9.58125 5.5625 9.18125 6.125H8.31875C7.93125 5.5625 7.49062 5.10938 6.99687 4.76562C6.50312 4.42188 5.9625 4.25 5.375 4.25C4.6625 4.25 4.04688 4.49687 3.52813 4.99062C3.00938 5.48438 2.75 6.10625 2.75 6.85625C2.75 7.26875 2.8375 7.6875 3.0125 8.1125C3.1875 8.5375 3.5 9.02813 3.95 9.58438C4.4 10.1406 5.0125 10.7906 5.7875 11.5344C6.5625 12.2781 7.55 13.175 8.75 14.225C9.075 13.9375 9.45625 13.6063 9.89375 13.2313C10.3313 12.8563 10.6813 12.5438 10.9438 12.2938L12.0125 13.3625C11.7375 13.6125 11.3875 13.9219 10.9625 14.2906C10.5375 14.6594 10.1625 14.9875 9.8375 15.275L8.75 16.25ZM14 13.25V11H11.75V9.5H14V7.25H15.5V9.5H17.75V11H15.5V13.25H14Z" fill="#16A2A3"></path>
+                          </g>
+                        </svg>
+                      </div>                                    存入我的條件
+                    </button>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+              <!-- 行動版才顯示的搜尋選單-->
+              <div class="page-search-section mobileonly">
+                <div class="condition-input-group">
+                  <input class="input-condition" placeholder="台北市">
+                  <input class="input-condition" placeholder="房數不拘">
+                  <input class="input-condition" placeholder="租金不拘">
+                  <input class="input-condition" placeholder="類型不拘">
+                  <input class="input-condition" placeholder="坪數不拘">
+                  <input class="input-condition" placeholder="更多篩選">
+                </div>
+                <div class="condition-input-group">
+                  <input class="search-bar" placeholder="關鍵字、房屋編號、街道、社區大樓或學校...">
+                </div>
+                <div class="condition-input-group">
+                  <button class="ct-green-text-button">
+                    <div class="text-button-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <mask id="mask0_5183_83307" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+                          <rect x="0.5" y="0.5" width="18" height="18" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_5183_83307)">
+                          <path d="M8.75 16.25L6.36875 14.1125C5.46875 13.3 4.69687 12.575 4.05312 11.9375C3.40937 11.3 2.87813 10.7 2.45938 10.1375C2.04063 9.575 1.73438 9.03125 1.54063 8.50625C1.34688 7.98125 1.25 7.43125 1.25 6.85625C1.25 5.68125 1.64375 4.70312 2.43125 3.92188C3.21875 3.14062 4.2 2.75 5.375 2.75C6.025 2.75 6.64375 2.8875 7.23125 3.1625C7.81875 3.4375 8.325 3.825 8.75 4.325C9.175 3.825 9.68125 3.4375 10.2688 3.1625C10.8563 2.8875 11.475 2.75 12.125 2.75C13.1375 2.75 13.9875 3.03438 14.675 3.60313C15.3625 4.17188 15.8312 4.8875 16.0812 5.75H14.4875C14.2625 5.25 13.9313 4.875 13.4938 4.625C13.0563 4.375 12.6 4.25 12.125 4.25C11.4875 4.25 10.9375 4.42188 10.475 4.76562C10.0125 5.10938 9.58125 5.5625 9.18125 6.125H8.31875C7.93125 5.5625 7.49062 5.10938 6.99687 4.76562C6.50312 4.42188 5.9625 4.25 5.375 4.25C4.6625 4.25 4.04688 4.49687 3.52813 4.99062C3.00938 5.48438 2.75 6.10625 2.75 6.85625C2.75 7.26875 2.8375 7.6875 3.0125 8.1125C3.1875 8.5375 3.5 9.02813 3.95 9.58438C4.4 10.1406 5.0125 10.7906 5.7875 11.5344C6.5625 12.2781 7.55 13.175 8.75 14.225C9.075 13.9375 9.45625 13.6063 9.89375 13.2313C10.3313 12.8563 10.6813 12.5438 10.9438 12.2938L12.0125 13.3625C11.7375 13.6125 11.3875 13.9219 10.9625 14.2906C10.5375 14.6594 10.1625 14.9875 9.8375 15.275L8.75 16.25ZM14 13.25V11H11.75V9.5H14V7.25H15.5V9.5H17.75V11H15.5V13.25H14Z" fill="#16A2A3"></path>
+                        </g>
+                      </svg>
+                    </div>									存入我的條件
+                  </button>
+                  <button class="ct-green-button mb-1">
+                    <div class="button-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M6.70312 8.50346H3.70312C3.15312 8.50346 2.70312 8.05346 2.70312 7.50346C2.70312 6.95346 3.15312 6.50346 3.70312 6.50346H6.70312C7.25313 6.50346 7.70312 6.95346 7.70312 7.50346C7.70312 8.05346 7.25313 8.50346 6.70312 8.50346ZM6.70312 11.5035H3.70312C3.15312 11.5035 2.70312 11.9535 2.70312 12.5035C2.70312 13.0535 3.15312 13.5035 3.70312 13.5035H6.70312C7.25313 13.5035 7.70312 13.0535 7.70312 12.5035C7.70312 11.9535 7.25313 11.5035 6.70312 11.5035ZM20.5831 17.7935L17.4631 14.6735C16.6031 15.2335 15.5731 15.5535 14.4631 15.4935C12.0931 15.3835 10.0631 13.5335 9.74312 11.1835C9.30312 7.83346 12.1931 5.00346 15.5731 5.57346C17.5231 5.90346 19.1431 7.42346 19.5731 9.35346C19.9031 10.8135 19.5831 12.1735 18.8731 13.2535L22.0031 16.3835C22.3931 16.7735 22.3931 17.4035 22.0031 17.7935C21.6131 18.1835 20.9731 18.1835 20.5831 17.7935ZM17.7031 10.5035C17.7031 8.85346 16.3531 7.50346 14.7031 7.50346C13.0531 7.50346 11.7031 8.85346 11.7031 10.5035C11.7031 12.1535 13.0531 13.5035 14.7031 13.5035C16.3531 13.5035 17.7031 12.1535 17.7031 10.5035ZM3.70312 18.5035H11.7031C12.2531 18.5035 12.7031 18.0535 12.7031 17.5035C12.7031 16.9535 12.2531 16.5035 11.7031 16.5035H3.70312C3.15312 16.5035 2.70312 16.9535 2.70312 17.5035C2.70312 18.0535 3.15312 18.5035 3.70312 18.5035Z" fill="white"></path>
+                      </svg>
+                    </div>									找屋
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recommandObject listOnly">
+            <div class="objectRowTitleSec">
+              <div class="tileSec"><img src="img/icon2.png" width="40" alt="">
+                <div class="objectRowTitle">
+                  <div class="container-heading-h3 c0">本月熱門社區</div>
+                  <div class="container-heading-basic">專屬於您優質推薦社區，輕鬆找到你的家。</div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="community_month_list mt-3 Swiper6">
+                <div class="swiper-wrapper x-box"><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic2.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic1.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a><a class="community_object_mode swiper-slide" href="">
+                    <div class="community_month_object_mode_img"><img src="img/pic2.png" alt=""></div>
+                    <div class="community_month_object_info">
+                      <h5 class="h5">金泰源及第NO.2</h5>
+                      <p>13.1萬/坪</p>
+                    </div></a></div>
+              </div>
+              <!-- 列表區塊-->
+            </div>
+          </div>
+          <div class="container">
+            <div class="objects">
+              <div class="object-list-head">
+                <div class="object-list-filter">
+                  <div class="object-list-title">
+                    <div class="gray-600">共有</div>
+                    <div class="basic-green-number">4321</div>
+                    <div class="gray-600">筆物件符合查詢條件</div>
+                  </div>
+                </div>
+                <!--
+                div(style='font-size: var(--ct-t-basic);') 只顯示
+                button#filter1.ct-green-outLine-button(onclick='selectFilter(1)')
+                	| 新上架
+                	i.fa-regular.fa-circle-xmark(style='display: none;')
+                button#filter2.ct-green-outLine-button(onclick='selectFilter(2)')
+                	| VR環景
+                	i.fa-regular.fa-circle-xmark(style='display: none;')
+                button#filter3.ct-green-outLine-button(onclick='selectFilter(3)')
+                	| 降價專區
+                	i.fa-regular.fa-circle-xmark(style='display: none;')
+                <div class="object-list-title">
+                <div class="gray-600">共有</div>
+                <div class="basic-green-number">4321</div>
+                <div class="gray-600">筆物件</div>
+                </div>
+                
+                
+                
+                -->
+                <div class="list-func">
+                  <!-- 列表、卡片切換icon按鈕-->
+                  <input class="input-condition" placeholder="最佳排序">
+                </div>
+              </div>
+            </div>
+            <!-- 物件列表區塊-->
+            <div class="objectList object-virtical-list">
+              <!-- 物件區塊-->
+              <div class="container object-list-item" data-url="https://buy.cthouse.com.tw//house/1884983.html">
+                <div class="object-preview-image">
+                  <!-- 收藏按鈕--><a class="image-collect-heart btn" ng-click="fn.click_wish(itemHouse)"><i></i></a><img src="https://media.cthouse.com.tw/photo/project2/house_photo/202310/1884983-6s_new.jpg" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                </div>
+                <div class="buy-object-info" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                  <div class="object-info-top-buy">
+                    <div class="object-title-addr">
+                      <div class="object-info-top-title"><a class="ng-binding" href="/house/1884983.html" target="_blank">020.摩根無敵景觀美屋</a></div>
+                    </div>
+                    <div class="object-info-top-right-buy listOnly pconly" ng-show="listDisplay">
+                      <div class="object-info-original-price-sec ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                        <div class="object-info-top-right-unit">成交單價</div>
+                        <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                        <div class="object-info-top-right-unit mr-2">萬</div>
+                        <div class="object-info-top-right-unit">待售</div>
+                        <div class="object-info-top-right-price number-text ng-binding">20</div>
+                        <div class="object-info-top-right-unit">筆</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-object-wrap">
+                    <div class="object-info-main">
+                      <div class="object-tag-info"> 
+                        <div class="object-info-top-addr ng-binding">臺北市松山區南京東路5段</div>
+                      </div>
+                      <!-- 總坪數-->
+                      <div class="object-info-main-item keep-line-on-mobile">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">坪數</div>
+                        <div class="gray-800 ng-binding">50~80坪</div>
+                      </div>
+                      <!-- 主_陽-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">屋齡</div>
+                        <div class="gray-800 ng-binding">10年</div>
+                      </div>
+                      <!-- 地坪-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">樓高</div>
+                        <div class="gray-800 ng-binding">7層</div>
+                      </div>
+                    </div>
+                    <div class="object-vr-func" ng-show="itemHouse.is_vr==1">
+                      <div class="right-store-info">
+                        <div class="store-info-title-pic">
+                          <div class="store-pic"><img src="img/franchise.png" alt=""></div>
+                        </div><span class="store-info-title"><small>社區專家</small>
+                          <div class="gray-600 itemName object-info-main-item">捷運市府加盟店</div><a class="tel" href="#">02-85012225</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 行動版列表價格-->
+                  <div class="object-mobile-price-section">
+                    <div class="object-info-original-price-sec ng-hide pt-2" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                      <div class="object-info-top-right-unit">總坪數</div>
+                      <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                      <div class="object-info-top-right-unit">萬</div>
+                      <div class="object-info-top-right-unit">待售</div>
+                      <div class="object-info-top-right-price number-text ng-binding">20</div>
+                      <div class="object-info-top-right-unit">筆</div>
+                    </div>
+                  </div>
+                  <div class="object-card-bottom cardOnly ng-hide" style="justify-content: flex-start; gap: 0.5rem;" ng-show="listDisplay==false">
+                    <div class="object-info-price-original ng-binding ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">1938萬</div>
+                  </div>
+                  <div class="object-tag-info listOnly pconly" ng-show="listDisplay">
+                    <!-- ngRepeat: itemTag in itemHouse.tag_filter-->
+                    <div class="object-tag tag1" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="臺北摩根">臺北摩根</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="南京三民">南京三民</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="西松">西松</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立西松國小">市立西松國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立健康國小">市立健康國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container object-list-item" data-url="https://buy.cthouse.com.tw//house/1884983.html">
+                <div class="object-preview-image">
+                  <!-- 收藏按鈕--><a class="image-collect-heart btn" ng-click="fn.click_wish(itemHouse)"><i></i></a><img src="https://media.cthouse.com.tw/photo/project2/house_photo/202310/1884983-6s_new.jpg" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                </div>
+                <div class="buy-object-info" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                  <div class="object-info-top-buy">
+                    <div class="object-title-addr">
+                      <div class="object-info-top-title"><a class="ng-binding" href="/house/1884983.html" target="_blank">020.摩根無敵景觀美屋</a></div>
+                    </div>
+                    <div class="object-info-top-right-buy listOnly pconly" ng-show="listDisplay">
+                      <div class="object-info-original-price-sec ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                        <div class="object-info-top-right-unit">成交單價</div>
+                        <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                        <div class="object-info-top-right-unit mr-2">萬</div>
+                        <div class="object-info-top-right-unit">待售</div>
+                        <div class="object-info-top-right-price number-text ng-binding">20</div>
+                        <div class="object-info-top-right-unit">筆</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-object-wrap">
+                    <div class="object-info-main">
+                      <div class="object-tag-info"> 
+                        <div class="object-info-top-addr ng-binding">臺北市松山區南京東路5段</div>
+                      </div>
+                      <!-- 總坪數-->
+                      <div class="object-info-main-item keep-line-on-mobile">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">坪數</div>
+                        <div class="gray-800 ng-binding">50~80坪</div>
+                      </div>
+                      <!-- 主_陽-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">屋齡</div>
+                        <div class="gray-800 ng-binding">10年</div>
+                      </div>
+                      <!-- 地坪-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">樓高</div>
+                        <div class="gray-800 ng-binding">7層</div>
+                      </div>
+                    </div>
+                    <div class="object-vr-func" ng-show="itemHouse.is_vr==1">
+                      <div class="right-store-info">
+                        <div class="store-info-title-pic">
+                          <div class="store-pic"><img src="img/franchise.png" alt=""></div>
+                        </div><span class="store-info-title"><small>社區專家</small>
+                          <div class="gray-600 itemName object-info-main-item">捷運市府加盟店</div><a class="tel" href="#">02-85012225</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 行動版列表價格-->
+                  <div class="object-mobile-price-section">
+                    <div class="object-info-original-price-sec ng-hide pt-2" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                      <div class="object-info-top-right-unit">總坪數</div>
+                      <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                      <div class="object-info-top-right-unit">萬</div>
+                      <div class="object-info-top-right-unit">待售</div>
+                      <div class="object-info-top-right-price number-text ng-binding">20</div>
+                      <div class="object-info-top-right-unit">筆</div>
+                    </div>
+                  </div>
+                  <div class="object-card-bottom cardOnly ng-hide" style="justify-content: flex-start; gap: 0.5rem;" ng-show="listDisplay==false">
+                    <div class="object-info-price-original ng-binding ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">1938萬</div>
+                  </div>
+                  <div class="object-tag-info listOnly pconly" ng-show="listDisplay">
+                    <!-- ngRepeat: itemTag in itemHouse.tag_filter-->
+                    <div class="object-tag tag1" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="臺北摩根">臺北摩根</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="南京三民">南京三民</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="西松">西松</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立西松國小">市立西松國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立健康國小">市立健康國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container object-list-item" data-url="https://buy.cthouse.com.tw//house/1884983.html">
+                <div class="object-preview-image">
+                  <!-- 收藏按鈕--><a class="image-collect-heart btn" ng-click="fn.click_wish(itemHouse)"><i></i></a><img src="https://media.cthouse.com.tw/photo/project2/house_photo/202310/1884983-6s_new.jpg" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                </div>
+                <div class="buy-object-info" style="cursor:pointer" ng-click="fn.LinkToCase(itemHouse.url)">
+                  <div class="object-info-top-buy">
+                    <div class="object-title-addr">
+                      <div class="object-info-top-title"><a class="ng-binding" href="/house/1884983.html" target="_blank">020.摩根無敵景觀美屋</a></div>
+                    </div>
+                    <div class="object-info-top-right-buy listOnly pconly" ng-show="listDisplay">
+                      <div class="object-info-original-price-sec ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                        <div class="object-info-top-right-unit">成交單價</div>
+                        <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                        <div class="object-info-top-right-unit mr-2">萬</div>
+                        <div class="object-info-top-right-unit">待售</div>
+                        <div class="object-info-top-right-price number-text ng-binding">20</div>
+                        <div class="object-info-top-right-unit">筆</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-object-wrap">
+                    <div class="object-info-main">
+                      <div class="object-tag-info"> 
+                        <div class="object-info-top-addr ng-binding">臺北市松山區南京東路5段</div>
+                      </div>
+                      <!-- 總坪數-->
+                      <div class="object-info-main-item keep-line-on-mobile">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">坪數</div>
+                        <div class="gray-800 ng-binding">50~80坪</div>
+                      </div>
+                      <!-- 主_陽-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">屋齡</div>
+                        <div class="gray-800 ng-binding">10年</div>
+                      </div>
+                      <!-- 地坪-->
+                      <div class="object-info-main-item listOnly" ng-show="listDisplay">
+                        <div class="gray-600 itemName ng-binding" ng-show="listDisplay">樓高</div>
+                        <div class="gray-800 ng-binding">7層</div>
+                      </div>
+                    </div>
+                    <div class="object-vr-func" ng-show="itemHouse.is_vr==1">
+                      <div class="right-store-info">
+                        <div class="store-info-title-pic">
+                          <div class="store-pic"><img src="img/franchise.png" alt=""></div>
+                        </div><span class="store-info-title"><small>社區專家</small>
+                          <div class="gray-600 itemName object-info-main-item">捷運市府加盟店</div><a class="tel" href="#">02-85012225</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 行動版列表價格-->
+                  <div class="object-mobile-price-section">
+                    <div class="object-info-original-price-sec ng-hide pt-2" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">
+                      <div class="object-info-top-right-unit">總坪數</div>
+                      <div class="object-info-top-right-price number-text ng-binding">1,938</div>
+                      <div class="object-info-top-right-unit">萬</div>
+                      <div class="object-info-top-right-unit">待售</div>
+                      <div class="object-info-top-right-price number-text ng-binding">20</div>
+                      <div class="object-info-top-right-unit">筆</div>
+                    </div>
+                  </div>
+                  <div class="object-card-bottom cardOnly ng-hide" style="justify-content: flex-start; gap: 0.5rem;" ng-show="listDisplay==false">
+                    <div class="object-info-price-original ng-binding ng-hide" ng-show="itemHouse.discount&gt;0 &amp;&amp; itemHouse.discount&lt;50">1938萬</div>
+                  </div>
+                  <div class="object-tag-info listOnly pconly" ng-show="listDisplay">
+                    <!-- ngRepeat: itemTag in itemHouse.tag_filter-->
+                    <div class="object-tag tag1" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="臺北摩根">臺北摩根</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="南京三民">南京三民</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag2" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="西松">西松</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立西松國小">市立西松國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                    <div class="object-tag tag5" ng-repeat="itemTag in itemHouse.tag_filter">
+                      <!-- ngIf: itemTag[2]!=''--><a class="ng-binding ng-scope" ng-if="itemTag[2]!=''" href="javascript:void(0)" ng-click="fn.LinkTag(itemTag[2])" target="_blank" title="市立健康國小">市立健康國小</a>
+                      <!-- end ngIf: itemTag[2]!=''-->
+                      <!-- ngIf: itemTag[2]==''-->
+                      <!-- end ngRepeat: itemTag in itemHouse.tag_filter-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommandObject listOnly greed_bg mt-3">
+          <div class="container">
+            <div class="mb-3 mt-3 pl-2">
+              <div class="tileSec"><img src="img/icon2.png" alt="" width="40">
+                <div class="objectRowTitle">
+                  <div class="container-heading-h3 c3">為您推薦</div>
+                  <div class="container-heading-basic c3">專屬於您優質推薦好屋！找屋更方便！！</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="community_list mt-3 Swiper7">
+              <div class="swiper-wrapper x-box">
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-start">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><span class="btn-collect"><i class="bi-heart" data-v-f3a9b95a=""></i></span><img src="img/sample.jpg" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4">總坪數</p>
+                      <p class="text-end">54.49坪(含車位)</p>
+                    </div>
+                    <div class="detailed">
+                      <div class="inline_box">
+                        <p>28年10個月</p>
+                        <p>3房2廳2衛</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="detailed inline_box">
+                      <p class="c4 through">3,888萬 </p>
+                      <h5 class="h5 text-end">2,888萬<small class="red-badge2 c3"><i class="fa-solid fa-arrow-down c3"></i>36% </small></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="localObject listOnly mt-1">
+          <div class="container">
+            <div class="mb-3 mt-3">
+              <div class="tileSec"><img src="img/local_icon.png" alt="" width="40">
+                <div class="objectRowTitle">
+                  <div class="container-heading-h3 c0">在地<span class="c2">服務據點</span></div>
+                  <div class="container-heading-basic">我們擁有最專業的仲介，提供您最專業的服務！</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="community_list mt-3 Swiper8">
+              <div class="swiper-wrapper x-box">
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample1.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample2.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample1.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample2.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample1.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample2.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample1.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample2.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample1.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+                <div class="community_object_mode swiper-slide">
+                  <div class="community_object_mode_img"><img src="img/sample2.png" alt=""></div>
+                  <div class="community_object_info"><a class="l_style" href="">
+                      <h5 class="h5">金泰源及第NO.2</h5></a>
+                    <p class="c4">臺北市松山區南京東路5段</p>
+                    <div class="detailed inline_box"><a href="tel:048888906">04-8888906</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="col-md-2 text-center">
+                  <div class="arrow-box">
+                    <div class="swiper-button-next">
+                      <div class="fa fa-arrow-right"></div>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <div class="fa fa-arrow-left"></div>
+                    </div>
+                  </div>
+                  <div class="more-box"><a class="btn-more" href="">更多加盟店<i class="fa fa-angle-double-right pl-2"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 接續顯示物件區塊-->
+      </section>
+    </div>
+    <!-- #content end-->
+    <!--
+    Footer
+    =============================================
+    -->
+    <footer class="greed_bg c5" id="footer">
+      <div class="container">
+        <!--
+        Footer Widgets
+        =============================================
+        -->
+        <div class="footer-widgets-wrap">
+          <!-- Logo跟Sitemap區塊-->
+          <div class="row w-f">
+            <!-- Logo區塊-->
+            <div class="logo-info">
+              <div class="widget"><img class="footer-logo" src="img/flogo.svg" alt="Image" width="151px">
+                <div class="contactInfo">
+                  <div class="footer-heading-h6">免付費諮詢電話</div>
+                  <div class="number-bold-h6">0800-083-666</div>
+                </div>
+                <div class="contactInfo footer-heading-basic">
+                  <div title="contactUs">
+                    <li class="bi-envelope" style="margin-right: 2px;"></li><a href="mailto:cthservice@cthouse.com.tw?cc=leo@cthousing.com.tw;sunta@cthousing.com.tw">聯絡我們</a>
+                  </div>
+                  <div class="footer-trans75" title="tel">總機 02-8501-2225</div>
+                  <div class="footer-trans75" title="fax">傳真 02-8501-1319</div>
+                  <div class="footer-trans75" title="address">台北市中山區敬業一路99號4樓</div>
+                  <div class="footer-icon-col pconly">
+                    <div class="footer-social-icon">
+                      <!-- facebook svg-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M24.003 12.075C24.003 5.406 18.63 0 12.003 0C5.373 0.0015 0 5.406 0 12.0765C0 18.102 4.389 23.097 10.125 24.003V15.5655H7.08V12.0765H10.128V9.414C10.128 6.3885 11.9205 4.7175 14.661 4.7175C15.975 4.7175 17.3475 4.953 17.3475 4.953V7.923H15.834C14.3445 7.923 13.8795 8.8545 13.8795 9.81V12.075H17.2065L16.6755 15.564H13.878V24.0015C19.614 23.0955 24.003 18.1005 24.003 12.075Z" fill="#1B74E4"></path>
+                      </svg>
+                    </div>
+                    <div class="footer-social-icon">
+                      <!-- YT svg-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0039 24C18.6313 24 24.0039 18.6274 24.0039 12C24.0039 5.37258 18.6313 0 12.0039 0C5.37649 0 0.00390625 5.37258 0.00390625 12C0.00390625 18.6274 5.37649 24 12.0039 24ZM12.1264 6.74913H12.0485V6.75H11.8797C11.0465 6.75295 10.2134 6.76783 9.38066 6.79463L9.23103 6.80075L9.15578 6.80338L9.00528 6.80862L8.85653 6.81475C7.88528 6.8585 6.96041 6.9285 6.53428 7.04225C6.2371 7.12266 5.96629 7.27977 5.74898 7.49785C5.53167 7.71592 5.37551 7.98729 5.29616 8.28475C5.20778 8.61637 5.14566 9.05737 5.10366 9.5115L5.09491 9.6025L5.07566 9.83L5.06866 9.921L5.06603 9.9665L5.05991 10.0566C5.01266 10.7741 5.00566 11.4242 5.00391 11.6124V11.72C5.00854 12.3145 5.03247 12.9086 5.07566 13.5015L5.08266 13.5925L5.08966 13.6844C5.13341 14.1849 5.19816 14.6827 5.29528 15.0476C5.37477 15.3449 5.53099 15.6161 5.74829 15.834C5.96559 16.0519 6.23633 16.2089 6.53341 16.2893C6.95953 16.4048 7.88441 16.4739 8.85566 16.5168L9.00528 16.5229L9.15491 16.529L9.23103 16.5325L9.37978 16.5378C10.5523 16.578 11.6705 16.5833 11.9409 16.5833H12.0652C12.5998 16.5824 16.4577 16.5631 17.4727 16.2901C17.7698 16.2097 18.0406 16.0526 18.258 15.8345C18.4753 15.6165 18.6314 15.3451 18.7108 15.0476C18.8079 14.6819 18.8727 14.1849 18.9164 13.6844L18.9243 13.5934L18.9313 13.5015C18.9943 12.6685 19.0022 11.8687 19.003 11.699V11.6334C19.0022 11.4697 18.9952 10.7207 18.9383 9.921L18.9313 9.83L18.912 9.6025L18.9033 9.5115C18.8613 9.05737 18.7992 8.61725 18.7108 8.28475C18.6312 7.98741 18.4749 7.71617 18.2577 7.49813C18.0404 7.28009 17.7697 7.1229 17.4727 7.04225C16.49 6.778 12.8457 6.75175 12.1264 6.74913ZM10.6039 13.7736V9.55787L14.2413 11.6666L10.6039 13.7736Z" fill="#FF0000"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sitemap區塊-->
+            <div class="sitemap-info pconly">
+              <div class="sitemap-row">
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>買屋</h4>
+                    <ul>
+                      <li><a href="https://wordpress.org/support/forum/requests-and-feedback">區域找屋</a></li>
+                      <li><a href="https://wordpress.org/extend/plugins/">社區找屋</a></li>
+                      <li><a href="https://wordpress.org/support/">地圖找屋</a></li>
+                      <li><a href="https://wordpress.org/extend/themes/">捷運找屋</a></li>
+                      <li><a href="https://wordpress.org/news/">CP值找屋</a></li>
+                      <li><a href="https://planet.wordpress.org/">主題找屋</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>成交行情</h4>
+                    <ul>
+                      <li><a href="https://wordpress.org/support/forum/requests-and-feedback">區域成交行情</a></li>
+                      <li><a href="https://wordpress.org/extend/plugins/">社區成交行情</a></li>
+                      <li><a href="https://wordpress.org/support/">捷運成交行情</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>售屋</h4>
+                    <ul>
+                      <li><a href="https://codex.wordpress.org/">售屋委託</a></li>
+                      <li><a href="https://wordpress.org/support/forum/requests-and-feedback">中信房屋交易服務</a></li>
+                      <li><a href="https://wordpress.org/extend/plugins/">服務據點</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>實價登錄</h4>
+                    <ul>
+                      <li><a href="https://codex.wordpress.org/">區域實價登錄</a></li>
+                      <li><a href="https://wordpress.org/support/forum/requests-and-feedback">社區成交行情</a></li>
+                      <li><a href="https://wordpress.org/extend/plugins/">捷運成交行情</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>租屋</h4>
+                    <ul>
+                      <li><a href="https://codex.wordpress.org/">地圖找屋</a></li>
+                      <li><a href="https://wordpress.org/support/forum/requests-and-feedback">區域找屋</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>知識</h4>
+                    <ul>
+                      <li><a href="#">最新消息</a></li>
+                      <li><a href="#">知識特輯</a></li>
+                      <li><a href="#">生活情報</a></li>
+                      <li><a href="#">不動產知識教室</a></li>
+                      <li><a href="#">法律稅務</a></li>
+                      <li><a href="#">稅費試算</a></li>
+                      <li><a href="#">買賣節稅技巧</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4>關於中信</h4>
+                    <ul>
+                      <li><a href="#">品牌故事</a></li>
+                      <li><a href="#">CSR公益</a></li>
+                      <li><a href="#">中信交易服務</a></li>
+                      <li><a href="#">訂閱電子報</a></li>
+                      <li><a href="#">服務據點</a></li>
+                      <li><a href="#">徵才公告</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sitemap-col">
+                  <div class="widget widget_links">
+                    <h4><a href="#">加盟中信</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 獎項 其他-->
+          <div class="footer-row pconly">
+            <div class="award-info">
+              <div class="widget">
+                <h4>企業得獎認證</h4>
+                <div class="award-images">
+                  <div class="award"><img src="images/awards/icon_award1.png"></div>
+                  <div class="award"><img src="images/awards/icon_award2.png"></div>
+                  <div class="award"><img src="images/awards/icon_award3.png"></div>
+                  <div class="award"><img src="images/awards/icon_award4.png"></div>
+                  <div class="award"><img src="images/awards/icon_award6.png"></div>
+                  <div class="award"><img src="images/awards/icon_award7.png"></div>
+                  <div class="award"><img src="images/awards/icon_award8.png"></div>
+                  <div class="award"><img src="images/awards/icon_award9.png"></div>
+                </div>
+              </div>
+            </div>
+            <!-- APP下載連結-->
+            <div class="app-info">
+              <div class="widget">
+                <h4>APP免費下載，你的行動達令！</h4>
+                <div class="award-images">
+                  <div class="applink"><img src="images/icon/btn_appStore.png"></div>
+                  <div class="applink"><img src="images/icon/btn_ggPlay.png"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 同業連結-->
+            <div class="app-info">
+              <div class="widget widget_links">
+                <h4>物件來源夥伴</h4>
+                <ul class="horiz-ul transVir">
+                  <li><a href="#">信義房屋</a></li>
+                  <li><a href="#">住商不動產</a></li>
+                  <li><a href="#">太平洋房屋</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .footer-widgets-wrap end-->
+      <!--
+      Copyrights
+      =============================================
+      -->
+      <div id="copyrights">
+        <div class="container footer-end">
+          <div class="footer-end-link pconly">
+            <ul class="horiz-ul copyright-links">
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">網站地圖</a></li>
+              <li><a href="#">加盟管理後台登入</a></li>
+            </ul>
+          </div>
+          <div class="footer-end-text">
+            <div class="copyright-links">© 中信房屋仲介股份有限公司版權所有</div>
+          </div>
+        </div>
+      </div>
+      <!-- #copyrights end-->
+      <!-- #footer end-->
+      <!-- #wrapper end-->
+      <!--
+      Go To Top
+      =============================================
+      -->
+      <div class="uil uil-angle-up" id="gotoTop"></div>
+      <!--
+      JavaScripts
+      =============================================
+      -->
+      <script src="js/jquery.js"></script>
+      <script src="js/functions.js"></script>
+      <!-- SLIDER REVOLUTION 5.x SCRIPTS-->
+      <script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+      <script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+      <script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+      <script src="https://m.catch.co.kr/js/swiper.v4.5.0.min.js"></script>
+      <script type="module" defer>
+        import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee@1.1.2/dist/vanilla-marquee.js';
+        new marquee( document.getElementById( 'marquee' ) );
+      </script>
+      <script>
+        var tpj=jQuery;
+        tpj(document).ready(function() {
+        //滑鼠移到物件上方時的效果
+        $('.objectList > .object-list-item').on('mouseover', function() {
+        overobject($(this));
+        console.log($(this));
+        //改變區塊底色
+        $(this).find('.buy-object-info').css('background','var(--cnvs-contrast-100)');
+        //當mouseover才顯示環景的按鈕
+        $(this).find('.ct-green-button').show();
+        });
+        //滑鼠移出物件的效果
+        $('.objectList > .object-list-item').on('mouseleave', function() {
+        overobject($(this));
+        console.log($(this));
+        $(this).find('.buy-object-info').css('background','white');
+        $(this).find('.ct-green-button').hide();
+        });
+        listView()
+        });
+        //滑鼠移到物件上方時取得區塊物件資料
+        function overobject(element) {
+        //var onObject = element.css('background','var(--cnvs-contrast-100)');
+        var objName=element.find('.object-info-top-title').text();
+        console.log(objName);
+        }
+        //顯示為卡片模式
+        function cardsView(){
+        $('.listView').addClass('icon-btn-active')
+        $('.cardView').removeClass('icon-btn-active')
+        $('.objectList').removeClass("object-virtical-list")
+        $('.objectList').addClass("object-card-list")
+        $('.listOnly').hide()
+        $('.cardOnly').show()
+        $('.object-info-main-item>.gray-600').hide()
+        }
+        //顯示為列表模式
+        function listView(){
+        $('.cardView').addClass('icon-btn-active')
+        $('.listView').removeClass('icon-btn-active')
+        $('.objectList').removeClass("object-card-list")
+        $('.objectList').addClass("object-virtical-list")
+        $('.cardOnly').hide()
+        $('.listOnly').show()
+        $('.object-info-main-item>.gray-600').show()
+        }
+        //加盟店廣告區塊動態效果，加盟店名稱取自上方物件的加盟店名稱
+        $('.franchiseAd').ready(function(){
+        var text = "讓「大直美麗華加盟店」為您服務！"; // Replace this with your desired text
+        var index = 0;
+        var speed = 1300;
+        //取得廣告區塊位置
+        adPosition= $('.franchiseAd').position()
+        //取得廣告區塊距上方的距離
+        adPositionTop= adPosition.top
+        //取得瀏覽器高度
+        browserHeight = $(window).height();
+        //觸發打字動畫的距離為當廣告區塊進入瀏覽器下方1/3位置
+        startTypeHeight=adPositionTop-(browserHeight)
+        console.log('adPosition:'+adPositionTop)
+        $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop();
+        console.log('Scroll position:', scrollPos);
+        if (scrollPos>startTypeHeight){
+        //打字機效果
+        function typeWriter() {
+        if (index < text.length) {
+        $('.textEffect').append(text.charAt(index));
+        index++;
+        setTimeout(typeWriter, speed);
+        }
+        }
+        typeWriter()
+        }
+        });
+        })
+        //點擊加盟店廣告後，顯示視窗
+        function fMessageWindow(){
+        whiteMask="<div class='mask' onclick='removeWin()'></div>>"
+        fMessageWindowhtml="<div class='fmessageWin'><div class='winTile'>問題諮詢</div><a class='closeWin'><li class='fa-regular fa-circle-xmark'></li></a>"+
+        "<div class='winCol'><div class='colName'>姓名</div><div class='colInput'><input class='input-condition' placeholder='請輸入您的姓名'></div></div>"+
+        "<div class='winCol'><div class='colName'>聯絡方式</div><div class='colInput'><input class='input-condition' placeholder='請輸入手機號碼'></div></div>"+
+        "<div class='winCol'><div class='colName'>詢問內容</div><div class='colInput'><input class='input-condition' placeholder='您想詢問的問題'></div></div>"+
+        "<div class='winCol'><div class='colName'>聯絡時間</div>"+
+        "<div class='colInput items'>"+
+        "<div class='item'><input type='checkbox'><span>皆可</span></div>"+
+        "<div class='item'><input type='checkbox'><span>上午</span></div>"+
+        "<div class='item'><input type='checkbox'><span>下午</span></div>"+
+        "<div class='item'><input type='checkbox'><span>晚上</span></div>"+
+        "</div>"+
+        "<a class='ct-green-button'>送出<a>"+
+        "</div>"
+        $('body').append(whiteMask);
+        $('body').append(fMessageWindowhtml);
+        //取得瀏覽器高度
+        browserHeight = $(window).height();
+        //取得瀏覽器寬度
+        browserWeight = $(window).width();
+        //取得當前瀏覽位置
+        var scrollPos = $(window).scrollTop();
+        $('.fMessageWindow').css({'top':scrollTop-(browserHeight/2),'left':(browserWeight/2)})
+        }
+        /*關閉浮動視窗*/
+        function removeWin(){
+        $('.mask').remove();
+        $('.fmessageWin').remove();
+        }
+        /*選擇篩選按鈕*/
+        function selectFilter(id){
+        $('.btn-on').removeClass('btn-on')
+        $('#filter'+id).addClass('btn-on')
+        $('.object-list-filter>.ct-green-outLine-button>i').hide()
+        $('#filter'+id+'>i').show()
+        }
+      </script>
+      <script>
+        var ex7 = new Swiper('.Swiper6', {
+          slidesPerView: "auto",
+          freeMode: true,
+        });
+        var ex7 = new Swiper('.Swiper7', {
+          slidesPerView: "auto",
+          freeMode: true,
+        });
+        var ex8 = new Swiper('.Swiper8', {
+          slidesPerView: "auto",
+          freeMode: true,
+          scrollbar: {
+        el: ".swiper-scrollbar",
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+          
+        });
+      </script>
+    </footer>
+  </body>
+</html>
