@@ -1,0 +1,528 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+@charset "UTF-8";
+/*上方大圖*/
+.inpageBanner{
+    position: absolute;
+    background: url('../images/aboutus/aboutusbanne_s.jpg');
+    width: 100%;
+    height: 460px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    align-items: center;
+    align-self: stretch;
+}
+.inpageBannerText{
+    display: flex;
+    position:absolute;
+    top: 4rem;
+    left: 20%;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: fit-content;
+    
+}
+.inpageBannerTitle{
+    display: flex;
+    flex-direction: column;
+    padding: var(--rem-1025-rem, 20px) 24px;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(0, 169, 157, 0.60);
+    
+}
+.inpageBannerH1{
+    color: var(--theme-white, #FFF);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.inpageBannerH2{
+    color: var(--theme-white, #FFF);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inpageBannersubTitle{
+    display: flex;
+    padding: 8px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(0, 169, 157, 0.60);
+}
+.inpageBannerH3{
+    color: var(--theme-white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*關於中信分頁選項*/
+.aboutusCategory{
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+    margin-top: 22%;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    justify-content:space-between;
+}
+.cateCard{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    border-radius: var(--bs-border-radius);
+    justify-content:space-between;
+    max-width:32%;
+}
+.cateCard-current{
+    display: flex;
+    padding: 0.5rem 0;
+    border-top: 3px solid var(--cthouse-orange);
+    justify-content:flex-end;
+    gap: 0.5rem;
+}
+.cateCard > img{
+    display: flex;
+    width: auto;
+    height: 100%;
+    height: fit-content;
+}
+.cateText{
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+.cateTitle{
+    display: flex;
+    font-size: var(--ct-t-5);
+    padding: 0.5rem 0;
+}
+.cateDisctiption{
+    display: flex;
+    font-size: var(--ct-t-basic);
+    align-items:center;
+    text-align: center;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}    
+.categoryLink{
+    display: flex;
+    border-top: 1px solid var(--cnvs-contrast-300);
+    justify-content:flex-end;
+    gap: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.goesg, .goepaper{
+    cursor: pointer;
+}
+
+/*品牌頁介紹內容區塊*/
+.abourUsItroArea{
+    padding: 2rem;
+}
+.underLineTab{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: var(--ct-t-5);
+    border-bottom: 1px solid var(--cnvs-contrast-300);
+}
+.tabcurrent{
+    line-height: 3rem;
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--cthouse-orange);
+    color: var(--cnvs-contrast-800);
+    
+}
+.tabItem{
+    line-height: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.ItroTextArea{
+    padding: 1rem;
+}
+/*經營理念*/
+.ideaText {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
+    font-size: var(--ct-t-basic);
+}
+/*關於中信歷史CSS */
+.HistoryTextArea {
+    padding: 1rem;
+}
+.word-n {
+    font-size: var(--ct-t-basic);
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.history-n {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center
+}
+
+    .history-n:before {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 12px;
+        left: 16.2%;
+        margin-left: 0;
+        margin-top: 0;
+        left: 15.5%;
+        height: -webkit-calc(100% - 24px);
+        height: calc(100% - 24px);
+        border-right: 1px dotted var(--cnvs-contrast-600);
+        z-index: 0;
+        content: "";
+        background-color: #FFF
+    }
+
+    .history-n .year {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex: 1 0 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        display: flex;
+        vertical-align: middle;
+        z-index: 1;
+        align-items: center;
+    }
+
+        .history-n .year .num {
+            display: flex;
+            position: absolute;
+            width: 14.2%;
+            height: 100%;
+            padding-right: 1rem;
+            font-size: var(--ct-t-4);
+            line-height: 40px;
+            color: var(--ct-orange);
+            z-index: 1;
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+            .history-n .year .num:after {
+                content: "";
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                top: 10px;
+                right: -15%;
+                margin-right: 0;
+                margin-top: 0;
+                border-radius: 9px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                background-color: #FFF;
+                border: 2px solid var(--cnvs-contrast-600);
+            }
+
+        .history-n .year .month {
+            position: relative;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            display: flex;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 18%;
+            z-index: 0;
+            height: 100%;
+            flex-direction: column;
+            margin-top: 5px;
+        }
+
+            .history-n .year .month li {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin: 0 0 1.5rem 0;
+                display: flex;
+                float: left;
+                align-items: center;
+                line-height: 2rem;
+                font-size: var(--ct-t-basic);
+                gap: 2rem;
+            }
+
+                .history-n .year .month li .lt {
+                    display: flex;
+                    height: 100%;
+                    min-width: fit-content;
+                    margin-right: 0;
+                    margin-top: 0.5rem;
+                    line-height: 20px;
+                    color: #16a2a3;
+                    z-index: 1;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    position:absolute;
+                    width:100%;
+                    float:right;
+                }
+
+                .history-n .year .month li .rt {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    vertical-align: middle;
+                    line-height: 2rem;
+                    color: #50504e;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    flex: 1 0 0;
+                    padding-right:6rem;
+                }
+/*選擇中信區塊*/
+.choseCthouseSection{
+    background: url(../images/aboutus/aboutusJoinBg.jpg);
+    width: 100%;
+    height: fit-content;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 4rem;
+}
+.choseCthouseTop{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+}
+.choseCthouseTitle{
+    display: flex;
+    font-size: var(--ct-t-5);
+    color: white;
+    margin: 1rem 0;
+}
+.choseCthouseText{
+    display: flex;
+    font-size: var(--ct-t-basic);
+    color: white;
+    max-width: 70%;
+    line-height: 2rem;
+}
+.choseCthouseMain{
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    padding: 2rem;
+    gap:1.5rem;
+    background-color: rgba(65, 30, 2, 0.5);
+    border-radius: var(--bs-border-radius);
+    margin: 2rem 0;
+}
+.choseCthouseItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /*background-color: rgba(65, 30, 2, 0.5);
+    border-radius: var(--bs-border-radius);*/
+    color: #FFFF;
+    padding: 1.5rem;
+    text-align:center;
+    border-right: 1px solid white;
+    
+}
+
+/*社群媒體與影片區*/
+.socialMediaSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0;
+}
+.socialMediaSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.socialMediaMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content:center;
+    cursor: pointer;
+}
+
+.videoList{
+    display: flex;
+
+}
+#advVideo, #imgVideo {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+.videoItem{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.videoView{
+    display: flex;
+    width: 300px;
+    height: 169px;
+    overflow: hidden;
+    position: relative;
+    align-items:center;
+}
+.videoView > img{
+    width: 300px;
+    border: 1 solid var(--cnvs-contrast-300);
+    border-radius: var(--bs-border-radius);
+    position: absolute;  
+}
+.videoItemText{
+    text-align: center;
+    font-size: var(--ct-t-basic);
+}
+
+.socialMediaLinkSection{
+    display: flex;
+    flex-direction: row;
+    flex:1 0 0;
+    justify-content:space-between;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--cnvs-contrast-300);
+
+}
+.socialMediaOption{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    align-items:center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: var(--bs-border-radius);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    
+}
+.socialMediaOptionIcon{
+    padding: 0.5rem;
+    
+}
+
+.socialMediaOptionText{
+    margin-top: 1rem;
+    font-size: var(--ct-t-basic);
+}
+/*影片列表頁面*/
+.CenterPageTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.listCol{
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.videos > .listCol> .videoList{
+    justify-content:flex-start;
+}
+
+/*去除物件邊框 用於choseCthouseItem*/
+.noborder{
+    border: none;
+}
+/*1280解析度以下----------------------------------------------------*/
+  @media (max-width: 1280px) {
+	.inpageBannerText{
+        display: flex;
+        position:absolute;
+        top: 4rem;
+        left: 10%;
+        flex-direction: column;
+        gap: 1rem;
+        min-height: fit-content;
+        
+    }
+
+}  
+
+
+/*1080解析度以下----------------------------------------------------*/
+@media (max-width: 1080px) {
+    .inpageBannerText{
+        display: flex;
+        position:absolute;
+        top: 4rem;
+        left: 65px;
+        flex-direction: column;
+        gap: 1rem;
+        min-height: fit-content;
+        
+    }
+    .inpageBannersubTitle{
+        display: none;
+    }
+
+}
+
+
+/*手機板-----------------------------------------*/
+@media (max-width: 768px) {
+ 
+}

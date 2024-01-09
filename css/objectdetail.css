@@ -1,0 +1,2409 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+@charset "UTF-8";
+.content {
+    font-family: var(--cnvs-primary-font) !important;
+}
+/*物件上方資訊區*/
+.object-main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+}
+.title-info-section{
+    display: flex;
+    flex-direction:row;
+    flex: 1 0 0;
+    align-items:center;
+    padding: 0;
+    
+}
+.object-qrcode{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+.object-title-section{
+    display: flex;
+    flex: 1 0 0;
+    flex-direction:column;
+}
+.object-title{
+    display: flex;
+    height: max-content;
+    font-size: var(--ct-t-4);
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.object-address {
+    display: flex;
+    font-size: var(--ct-t-6);
+}
+.title-text{
+    display: flex;
+}
+.object-address-section{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    justify-content:flex-end;
+}
+.price-info > span{
+    display: flex;
+    align-items:flex-end;
+    line-height: 2rem;
+}
+.photo-intro-section{
+    display: flex;
+    align-items: flex-start;
+    padding:0;
+    gap: 1rem;
+}
+.photo-section{
+    display: flex;
+    max-width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex:1 0 0;
+    width:730px;
+}
+    .photo-section > #galleryTop{
+        width:100%;
+        min-height:483px;
+        height:550px;
+    }
+
+    .main-photo {
+        align-self: stretch;
+    }
+.photo-thumbnail-section{
+    display: flex;
+    padding: 3px 0px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    overflow: hidden;
+}
+.photo-thumbnail{
+    width: 80px;
+    height: 60px;
+    min-width: 80px;
+}
+.intro-section{
+    display: flex;
+    flex: 1 0 0;
+    flex-direction:column;
+    gap:1rem;
+    max-width: 45%;
+}
+.object-func-section{
+    display: flex;
+    height: 3rem;
+    padding-right: 0px;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-direction:row;
+    justify-content:space-between;
+    flex: 1 0 0;
+}
+.object-share-func{
+    display: flex;
+    flex-direction:row;
+}
+.object-share-func > .btn{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 5px;
+    
+}
+    .object-share-func > .btn > a {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+.object-share-func > .btn >img{
+    width: 85%;
+    height: 85%;
+}
+.object-collect-outline{
+    display: flex;
+    flex: 1 0 0;
+}
+.object-collect-outline > .btn{
+    display: flex;
+    border: 1px solid var(--gray-300, #DEE2E6);
+    border-radius:var(--border-radius-default, 6px);
+    background-color: white;
+    padding: 0 1.5rem;
+    height: 35px;
+    align-items:center;
+}
+.house__func{
+    display:flex;
+    flex:1 0 0;
+}
+    .house__func > btn3 {
+        margin:0;
+    }
+.object-collect-outline > .house__func > a {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.object-intro-info {
+    /*H_ed
+    display: flex;
+    color: var(--bs-gray-800);
+    gap: 0.3rem;
+    
+    font-size: 1.2rem;*/
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    font-size: var( --ct-t-6);
+    padding-left: 0.5rem;
+}
+.object-intro-item {
+    display: flex;
+    /*H-ad*/
+    font-size: var(--ct-t-basic);
+    flex-direction: row;
+    gap: 0.2rem;
+    align-items:flex-end;
+}
+/*H_add*/
+.intro-item-colname {
+    display: flex;
+    color: var(--cnvs-themecolor);
+    margin-bottom: 1px;
+    margin-right: 0.5rem;
+}
+
+.intro-item-colvalue {
+    display: flex;
+    font-size: var(--ct-t-6);
+    color: var(--cnvs-contrast-800)
+}
+.intro-item-unit {
+    display: flex;
+    color: var(--cnvs-contrast-600);
+    margin-bottom:1px;
+}
+/*--*/
+
+.object-intro-item-list{
+    display: flex;
+    flex-direction: row;
+}
+.object-intro-item-list > .object-intro-item{
+    display: flex;
+    border-right: solid 2px var(--cnvs-contrast-300);
+    padding: 0 0.5rem;
+}
+
+.object-intro-item:first-child{
+    padding-left: 0;
+}
+
+.object-intro-item:last-child{
+    border-right: none;
+}
+
+.contact-card-section{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--text-third-gray-300, #DEE2E6);
+    gap: 0.5rem;
+
+}
+.contact-top-section{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    justify-content:center;
+}
+.contact-ad-text{
+    display: flex;
+    font-size: 1rem;
+}
+.contact-tel-text{
+    display: flex;
+    font-size: 2rem;
+}
+.contact-mid-section{
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    justify-content:center;
+    gap:0.5rem;
+}
+.contact-end-section{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content:center
+}
+.contact-detail-info{
+    font-size: 1rem;
+}
+    .contact-detail-info > .contact-detail-text > .txt5 {
+        font-size: 1rem;
+        font-weight:unset;
+        color:unset;
+    }
+    .contact-detail-info > .contact-detail-text > .txt6 {
+        font-size: unset;
+        font-weight: unset;
+        color: unset;
+    }
+/*詳細介紹區塊-----------------------------------------------------*/
+.object-detail-section{
+    display: flex;
+    padding:1rem;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.detail-row{
+    display: flex;
+    flex: 1 0 0;
+    flex-direction:row;
+    border-bottom:1px solid var(--cnvs-contrast-300);
+    padding: 0.5rem 0 1.5rem;
+    gap: 0.5rem;
+    flex-wrap:wrap;
+}
+    .detail-row > .rent_type_item{
+        display:flex;
+        min-width:40%;
+        width:47%;
+    }
+        .detail-row > .rent_type_item:before {
+            content: '‧';
+            color: var(--cnvs-themecolor);
+        }
+    .detail-row-title {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+.detail-text-content{
+    padding:0 3rem;
+    font-size: 1.2rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    line-height: 2rem;
+}
+    .detail-text-content > .detail__foreword {
+        line-height:2.2rem;
+    }
+
+.item-text{
+    display: flex;
+    flex: 1 0 0;
+    min-width: 35%;
+    align-items:center;
+    gap: 0.5rem;
+}
+.item-text::before{
+    content: '‧';
+    color: var(--cnvs-themecolor);
+}
+/*地圖區塊*/
+.map-street-section{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    margin: 1rem 0;
+}
+.map-street-menu{
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+    line-height: 2rem;
+    border-bottom:1px solid var(--cnvs-contrast-300);
+}
+.map-street-row{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+.map-store-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    max-width: 40%;
+}
+.map-store-cate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:0.3rem;
+    padding: 0.5rem 0;
+    border-bottom:1px solid var(--cnvs-contrast-300);
+}
+.map-store-cate > .btn:hover{
+    background-color: var(--cnvs-themecolor);
+    color: white;
+}
+.map-store-list{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    overflow-y: scroll;
+}
+.store-item{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--cnvs-contrast-600);
+    justify-content:space-between;
+    border-bottom:1px solid var(--cnvs-contrast-300);
+}
+.map-section{
+    display: flex;
+    flex: 1 0 0;
+    background: url("file:///C:/ngix/html/cthouse/theme/2023/images/map2.jpg"), lightgray 1% / cover no-repeat;
+}
+
+/*照片區塊*/
+.detail-photo-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    justify-content:space-between;
+    gap:2.5rem;
+    padding-left: 3rem;
+}
+.detail-photo-section > img{
+    display: flex;
+    flex: 1 0 0;
+    max-width: 48%;
+}
+
+/*頂部浮動列*/
+.floatTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: var(--bs-body-font-family);
+}
+.floatInfo{
+    display:flex;
+    min-width:fit-content;
+    padding-right:0.5rem;
+}
+.stickBar__nav li a {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #2f2f2f;
+    line-height: 49px;
+    padding: 0 18px;
+    font-family: var(--bs-body-font-family);
+}
+
+/*買屋*/
+.object-detail-section > .detail-text-content > .detail-row {
+    display:flex;
+    flex-direction:column;
+}
+    .object-detail-section > .detail-text-content > .detail-row > .detail-item {
+        display: flex;
+        flex: 1 0 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+        .object-detail-section > .detail-text-content > .detail-row > .detail-item > .item__td {
+            width:100%;
+        }
+        .object-detail-section > .detail-text-content > .detail-row > .detail-item > .item__td > ul {
+            display: flex;
+            flex: 1 0 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+            .object-detail-section > .detail-text-content > .detail-row > .detail-item > .item__td > ul > li {
+                display: flex;
+                flex: 1 0 0;
+                min-width: 40%;
+                align-items: center;
+                gap: 0.5rem;
+                width: 47%;
+            }
+                .object-detail-section > .detail-text-content > .detail-row > .detail-item > .item__td > ul > li:before {
+                    content: '‧';
+                    color: var(--cnvs-themecolor);
+                }
+
+/*原layout.css內容 重新定義*/
+.house.rent .house__mainRow .mainRow__left .gallery__top .swiper-slide{
+    background-color:transparent;
+}
+.house.rent .house__mainRow .mainRow__left .gallery__top {
+    width: 100%;
+}
+
+.mainRow__right {
+    /*H_ed
+    float: right;*/
+    /*H_ed from 40% to 32%
+    max-width: 40%;*/
+    /*    width: 32%;*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex:1 0 0;
+}
+
+.mainRow__right .house__booking {
+    /*H-ed
+        padding: 5%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 3px solid #d6d6d6;
+        margin-bottom: 15px;
+        background-color: #ebebeb*/
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    align-self: stretch;
+    border-radius: 4px;
+    border:none;
+    background: var(--gray-200, #E9ECEF);
+    flex: 0 1 0;
+}
+
+    .mainRow__right .house__booking .inputRow {
+        /*H-ed
+            overflow: hidden;
+            margin-bottom: 15px*/
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        justify-content: space-evenly;
+        margin-bottom:0px;
+    }
+
+        .mainRow__right .house__booking .inputRow input {
+            width: 48.5%;
+            height:43px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /*H-ed*/
+            border-radius: 6px;
+        }
+
+            .mainRow__right .house__booking .inputRow input:nth-child(1) {
+                float: left;
+            }
+
+            .mainRow__right .house__booking .inputRow input:nth-child(2) {
+                float: right
+            }
+
+    .mainRow__right .house__booking .timeRow {
+        /*H-ed
+            position: relative;
+            padding: 0 0 0 70px;
+            color: #6e6e6e*/
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        flex-direction:row;
+    }
+        .mainRow__right .house__booking .timeRow > label > input {
+            height: 1rem;
+            width: 1rem;
+            margin-top: 3px;
+        }
+
+        .mainRow__right .house__booking .timeRow .timeRowTitle {
+            /*H-ed
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70px;
+                color: #44b1ae*/
+            display: flex;
+        }
+
+        .mainRow__right .house__booking .timeRow label {
+            /*H_ed
+            display: inline-block;*/
+            display: flex;
+            gap: 0.3rem;
+            margin-bottom: 5px;
+            cursor: pointer;
+            /*H-ad*/
+            min-width: fit-content;
+            align-items:center;
+        }
+    .mainRow__right .btnRow2 {
+        /*H-ed
+        height: 46px;
+        vertical-align: bottom;
+        padding-top: 15px*/
+        display: flex;
+        width: 100%;
+        flex: 1 0 0;
+        height: 2rem;
+        padding:0;
+    }
+
+.stickBar.rent {
+    border-color: var(--cthouse-green)
+}
+
+    .stickBar.rent .stickBar__top {
+        /*H_ed*/
+        background-color: var(--cnvs-themecolor);
+        padding: 10px 0;
+    }
+
+        .stickBar.rent .stickBar__top .stickBar__msg {
+            /*H-ed
+            background-color: #da4e25*/
+            border-left: solid 1px white;
+            background-color: var(--cnvs-themecolor);
+        }
+
+.house .house__topRow .house__id {
+    color: #2c7095;
+    font-family: var(--bs-body-font-family)!important;
+    /*H-ed*/
+    display:flex;
+    flex-direction:row;
+    gap:0.2rem;
+}
+/*H_aad*/
+    .house .house__topRow .house__id > .idText {
+        display: flex;
+        color: var(--cnvs-contrast-600);
+        font-size: var(--ct-t-6);
+        line-height:100%;
+        align-items:flex-end;
+        padding-bottom:2px;
+    }
+
+.house.rent .house__mainRow .mainRow__left .gallery__top {
+    /*H_ed
+    min-height: 483px;*/
+    width: 100%;
+}
+
+.stickBar__nav {
+    height: 51px;
+    padding-bottom: 1px;
+    /*H_ed
+    border-bottom: 1px solid #d6d6d6;*/
+    background-color: #fff;
+    border-bottom:none;
+}
+
+    .stickBar__nav li a:hover,
+    .stickBar__nav li a.on {
+        text-decoration: none;
+        /*H_ed
+            background-color: #ebebeb*/
+        border-bottom: 2px solid var(--ct-orange);
+        background-color:transparent;
+    }
+
+        .stickBar__nav li a:hover:before,
+        .stickBar__nav li a.on:before {
+            width: 100%;
+            -webkit-transition: width 0.3s;
+            transition: width 0.3s
+        }
+
+    .stickBar__nav li a:before {
+        content: '';
+        position: absolute;
+        height:0px
+        /*H_ed
+            background: #e60012;
+            
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 4px
+            bottom: -3px;
+            height: 2px;
+            background: 2px var(--ct-orange)*/
+    }
+
+.stickBar.stick {
+    top: 0;
+    opacity: 1
+}
+
+.house__topRow {
+    /*H-ed
+    height: 82px;
+    padding: 12px 0 16px 0 */
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+    align-items: center;
+    padding: 0px;
+    font-family: var(--bs-body-font-family)!important;
+    height: 100px;
+    margin:1rem 0;
+    gap:0.5rem;
+}
+    .house__topRow .house__add {
+        font-family: var(--bs-body-font-family) !important;
+        /*H-edcolor: #2f2f2f;
+        font-size: 18px;
+        line-height: 25px*/
+        margin: 3px;
+        font-size: var(--ct-t-6);
+    }
+
+
+.house.rent .house__map .map__type {
+    /*H_ed
+    border-color: #eb623c*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border:none;
+    font-size:var(--ct-t-6);
+    border-bottom:solid 1px var(--cnvs-contrast-300)
+}
+
+    .house.rent .house__map .map__type a {
+        /*H_ed
+        color: #eb623c*/
+        padding: 0.3rem 0.6rem;
+        color: var(--cnvs-main-color);
+        font-size: var(--ct-fontsize-6);
+    }
+
+.house__map {
+    margin-bottom:0px;
+}
+
+
+        .house__map .map__type a.on:before {
+            border:none;
+            /*H-ed
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                width: 0;
+                content: '';
+                border-width: 12px 7px 0 7px;
+                border-style: solid;
+                border-color: #ebebeb transparent transparent transparent;
+                margin: 0 0 0 -4px*/
+        }
+
+.map__type {
+    /*H-ed
+    border-top: 1px solid #44b1ae;
+    margin-bottom: 25px*/
+}
+
+    .map__type a {
+        /*H-ed
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: center;
+        color: #44b1ae;
+        font-size: 21px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #ebebeb;
+        height: 44px;
+        line-height: 44px*/
+        display: flex;
+        float: none;
+        width: fit-content;
+        text-align: center;
+        border: none;
+        height: 100%;
+        line-height: 100%;
+    }
+
+        .map__type a:hover,
+        .map__type a.on {
+            /*H_ed
+            text-decoration: none;
+            background-color: #ebebeb;
+            font-weight: 700*/
+            border-bottom: 2px solid var(--ct-orange);
+            background-color: transparent;
+            font-weight: 500;
+        }
+
+        .map__type a h3 {
+            padding: 0;
+            margin: 0
+        }
+
+            .map__type a h3:after {
+                display: none
+            }
+
+.house__map {
+    /*H-ed
+    padding-bottom: 25px*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    line-height: 2rem;
+    border-bottom: 1px solid var(--cnvs-contrast-300);
+}
+.house__topRow .house__qrcode {
+    /*H-ed
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #dcdcdc;
+        overflow: hidden*/
+    display: flex;
+    width:80px;
+    height:80px;
+    border:none;
+    position:unset;
+}
+
+    .house__topRow .house__qrcode .qrcode__img {
+        /*H-ed
+            position: absolute;
+            clip: rect(0, 80px, 80px, 0);
+            top: 0;
+            left: 0;
+            height: 80px;
+            opacity: 0.7*/
+        height: 80px;
+        width: 80px;
+        display:flex;
+        position:unset;
+        border:solid 1px var(--cnvs-contrast-300);
+    }
+
+.house__topRow .topRow__left {
+    /*H-ed
+        position: relative;
+        float: left;
+        width: 60%;
+        padding: 10px 0 15px 100px;
+        font-weight: 700;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box*/
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    flex: 1 0 0;
+    padding:0px;
+    font-weight:400;
+    box-sizing:unset;
+    float:none;
+    position:unset;
+    gap:0.3rem;
+}
+
+.house__topRow .topRow__right {
+    /*H-ed
+        float: right;
+        width: 40%*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    float:none;
+    width:unset;
+}
+
+/*Move from lyout.css*/
+
+@media screen and (max-width: 760px) {
+    .house.rent .house__mTopRow .txt--tel1 {
+        background-image: url(../images/m/icon_phone1_1.png)
+    }
+
+        .house.rent .house__mTopRow .txt--tel1 b {
+            color: #eb623c
+        }
+
+    .house.rent .house__mainRow .mainRow__left .house__func a.on .heartI {
+        background-image: url(../images/m/icon_heart3_ov.png)
+    }
+
+    .house.rent .house__mainRow .mainRow__left .house__func a .heartI {
+        background-size: 20px 17px;
+        padding-left: 0;
+        background-position-y: 0
+    }
+
+    .house.rent .house__mainRow .mainRow__left .gallery__top {
+        min-height: 71.6vw
+    }
+
+        .house.rent .house__mainRow .mainRow__left .gallery__top .swiper-wrapper:empty {
+            min-height: 71.6vw;
+            background-image: url(../images/rent/rent_defaultPic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center
+        }
+
+    .house.rent .house__mainRow .mainRow__left .house_info {
+        display: none
+    }
+
+    .house.rent .house__mainRow .mainRow__left .house__func .func__houseName b {
+        color: #eb623c
+    }
+
+    .house.rent .house__mainRow .mainRow__left .house__func .btn3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 100%;
+        color: #fff;
+        font-size: 12px;
+        border: none;
+        border-radius: 0;
+        background-color: rgba(235, 98, 60, 0.8);
+        margin-right: 0
+    }
+
+    .house.rent .house__mainRow .mainRow__left .house__func .btn4,
+    .house.rent .house__mainRow .mainRow__left .house__func .btn5 {
+        display: none
+    }
+
+    .house.rent .house__detail .map__type h3 {
+        font-size: 15px;
+        display: inline-block
+    }
+
+    .house.rent .house__detail .detail__foreword {
+        font-size: 15px;
+        border-bottom: 0
+    }
+
+    .house.rent .house__detail .detail__intro .item__th {
+        /*H_ed
+        color: #eb623c*/
+        color: var(--cnvs-themecolor);
+        font-size: var(--ct-t-basic);
+    }
+    /*H_add*/
+    .intro__item > .item__td {
+        color: var(--cnvs-contrast-800);
+        font-size: var(--ct-t-6);
+    }
+
+    .house.rent .house__detail .detail__type {
+        padding-top: 25px;
+        margin-bottom: 0
+    }
+
+        .house.rent .house__detail .detail__type .rent_type_item {
+            width: 100%
+        }
+
+    .house.rent .house__call.mShow {
+        /*H_ed
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        display: inline-block;
+        vertical-align: middle;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        border-top: 1px solid #d6d6d6*/
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid var(--cnvs-contrast-300);
+        border-radius: var(--bs-border-radius)
+    }
+
+        .house.rent .house__call.mShow:before {
+            /*H_ed
+            content: "聯絡資訊";
+            position: absolute;
+            width: 25%;
+            height: auto;
+            top: 10px;
+            left: 10px;
+            margin-left: 0;
+            margin-top: 0;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: normal;
+            
+            font-family: Arial, "微軟正黑體";
+            color: #eb623c;
+            text-align: left;
+            z-index: 1*/
+        }
+
+        .house.rent .house__call.mShow .call__btm {
+            width: 100%;
+            /*H_ed
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 25%;
+            text-align: right*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:0;
+        }
+
+            .house.rent .house__call.mShow .call__btm .store {
+                /*H_ed
+                position: relative;
+                width: 100%;
+                height: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                
+                display: inline-block;
+                vertical-align: middle*/
+                display: flex;
+                flex-direction: column;
+                margin: 0.5rem;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+                .house.rent .house__call.mShow .call__btm .store span {
+                    /*H_ed
+                    position: relative;
+                    width: auto;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: normal;
+                    
+                        font-family: Arial, "微軟正黑體";
+                    color: #6e6e6e*/
+                }
+
+                    .house.rent .house__call.mShow .call__btm .store span.storeName {
+                        /*H_ed
+                        font-size: 13px;
+                        line-height: 13px;
+                        font-weight: bolder;
+                        
+                        font-family: Arial, "微軟正黑體";
+                        color: #eb623c;
+                        margin-bottom: 5px
+                            */
+                        font-size: var(--ct-t-6);
+                        color: var(--cthouse-orange);
+                    }
+
+                    .house.rent .house__call.mShow .call__btm .store span.b {
+                        font-size: 13px;
+                        line-height: 15px;
+                        font-weight: bolder;
+                        /*H_ed
+                        font-family: Arial, "微軟正黑體";*/
+                        color: #6e6e6e
+                    }
+
+                    .house.rent .house__call.mShow .call__btm .store span.tel {
+                        /*H_ed
+                        font-size: 13px;
+                        line-height: 18px;
+                        font-weight: normal;
+                        
+                        font-family: Arial, "微軟正黑體";
+                        color: #f14351*/
+                        font-size: var(--ct-t-6);
+                        color: var(--cnvs-contrast-800);
+                    }
+
+            .house.rent .house__call.mShow .call__btm .owner {
+                position: relative;
+                width: 100%;
+                height: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                display: inline-block;
+                vertical-align: middle
+            }
+
+                .house.rent .house__call.mShow .call__btm .owner span {
+                    position: relative;
+                    width: auto;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: normal;
+                    font-family: Arial, "微軟正黑體";
+                    color: #6e6e6e
+                }
+
+                    .house.rent .house__call.mShow .call__btm .owner span.b {
+                        font-size: 13px;
+                        line-height: 15px;
+                        font-weight: bolder;
+                        font-family: Arial, "微軟正黑體";
+                        color: #6e6e6e
+                    }
+
+                    .house.rent .house__call.mShow .call__btm .owner span.tel {
+                        font-size: 13px;
+                        line-height: 18px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #f14351
+                    }
+
+    .house.rent .house__moreDetail#houseQA {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-top: 100px
+    }
+
+        .house.rent .house__moreDetail#houseQA h3 {
+            font-size: 14px;
+            margin-bottom: 12px
+        }
+
+            .house.rent .house__moreDetail#houseQA h3:after {
+                width: 440%
+            }
+
+        .house.rent .house__moreDetail#houseQA .qaBox {
+            margin-bottom: 10px
+        }
+
+            .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage {
+                padding: 6px
+            }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .title {
+                    display: none
+                }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .msg {
+                    position: relative;
+                    width: 100%;
+                    height: 50px;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 16px;
+                    font-weight: normal;
+                    font-family: Arial, "微軟正黑體";
+                    color: #999;
+                    padding: 5px
+                }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: 10px;
+                    text-align: center;
+                    margin-bottom: 15px
+                }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .lt {
+                        position: relative;
+                        width: 110px;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        vertical-align: top;
+                        text-align: left
+                    }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .lt .pic {
+                            position: relative;
+                            width: 110px;
+                            height: 30px;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            background-color: #eeeeee;
+                            margin-bottom: 5px
+                        }
+
+                            .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .lt .pic img {
+                                width: 100%;
+                                height: 100%
+                            }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .lt .reflash {
+                            position: relative;
+                            width: auto;
+                            height: auto;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 10px;
+                            line-height: 10px;
+                            font-weight: normal;
+                            font-family: Arial, "微軟正黑體";
+                            color: #6e6e6e;
+                            text-decoration: underline
+                        }
+
+                            .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .lt .reflash:hover {
+                                color: #2f2f2f
+                            }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .rt {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        vertical-align: top
+                    }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .code_box .rt .code {
+                            position: relative;
+                            width: 180px;
+                            height: 30px;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 13px;
+                            line-height: 28px;
+                            font-weight: normal;
+                            font-family: Arial, "微軟正黑體";
+                            color: #50504d;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            border: 1px solid #d5d5d5;
+                            padding: 0 5px
+                        }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .btn {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-bottom: 0
+                }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .btn .submit {
+                        position: relative;
+                        width: 100%;
+                        height: 42px;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        line-height: 42px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #fff;
+                        margin-right: 0
+                    }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .leaveMessage .btn .des {
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 13px;
+                        font-weight: bolder;
+                        font-family: Arial, "微軟正黑體";
+                        color: #50504d;
+                        vertical-align: bottom;
+                        text-align: center
+                    }
+
+            .house.rent .house__moreDetail#houseQA .qaBox .message .question {
+                position: relative;
+                width: 100%;
+                height: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 6px;
+                background-color: #f8f8f8;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin-bottom: 10px
+            }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .question .info {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    margin-left: 0;
+                    margin-top: 0;
+                    min-height: 97px;
+                    margin-bottom: 0;
+                    z-index: 0;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    padding: 6px
+                }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .question .info span {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #eb623c;
+                        margin: 8px 15px 8px 0
+                    }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .question .info p {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #50504d;
+                        margin: 8px 5px 8px 0
+                    }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .question .info .btn {
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                        bottom: 0;
+                        right: 0;
+                        margin-right: 0;
+                        margin-bottom: 0;
+                        float: none;
+                        top: auto;
+                        left: auto;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        padding: 6px;
+                        text-align: right
+                    }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .message .question .info .btn a {
+                            position: relative;
+                            width: auto;
+                            height: auto;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 12px;
+                            line-height: 23px;
+                            font-weight: normal;
+                            font-family: Arial, "微軟正黑體";
+                            color: #50504d;
+                            border-radius: 5px;
+                            padding: 0 10px;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            border: 1px solid #d6d6d6;
+                            background-color: #ebebeb;
+                            margin-left: 7px
+                        }
+
+                            .house.rent .house__moreDetail#houseQA .qaBox .message .question .info .btn a:hover {
+                                background-color: #d6d6d6;
+                                text-decoration: none
+                            }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .question .text {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 15px;
+                    line-height: 21px;
+                    font-weight: bolder;
+                    font-family: Arial, "微軟正黑體";
+                    color: #50504d;
+                    margin-bottom: 32px;
+                    margin-top: 32px;
+                    z-index: 1
+                }
+
+            .house.rent .house__moreDetail#houseQA .qaBox .message .answer {
+                padding: 10px 20px 20px 20px
+            }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .answer .ansTitle {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: normal;
+                    font-family: Arial, "微軟正黑體";
+                    color: #6e6e6e;
+                    margin-bottom: 10px
+                }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .answer .text {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 20px;
+                    font-weight: normal;
+                    font-family: Arial, "微軟正黑體";
+                    color: #2f2f2f;
+                    margin-bottom: 15px
+                }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .answer .info {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #ebebeb
+                }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .answer .info span {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #eb623c;
+                        margin: 0px 5px 0px 0
+                    }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .message .answer .info span.name {
+                            color: #000
+                        }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .answer .info p {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #50504d;
+                        margin: 0px 5px 0px 0
+                    }
+
+                .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle
+                }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply .repTitle {
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        line-height: 16px;
+                        font-weight: bolder;
+                        font-family: Arial, "微軟正黑體";
+                        color: #eb623c;
+                        margin: 15px 0
+                    }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply .replyMessage {
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-weight: normal;
+                        font-family: Arial, "微軟正黑體";
+                        color: #999;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        border: 1px solid #d6d6d6;
+                        padding: 5px 10px;
+                        margin-bottom: 20px;
+                        min-height: 70px
+                    }
+
+                    .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply .btn {
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: 0;
+                        display: inline-block;
+                        vertical-align: middle
+                    }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply .btn a {
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            line-height: 16px;
+                            font-weight: normal;
+                            font-family: Arial, "微軟正黑體";
+                            color: #fff;
+                            border-radius: 5px;
+                            background-color: #eb623c;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            padding: 12px 55px;
+                            margin-bottom: 5px;
+                            text-align: center
+                        }
+
+                        .house.rent .house__moreDetail#houseQA .qaBox .message .answer .reply .btn .des {
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 13px;
+                            line-height: 13px;
+                            font-weight: normal;
+                            font-family: Arial, "微軟正黑體";
+                            color: #50504d;
+                            vertical-align: bottom;
+                            text-align: center
+                        }
+
+            .house.rent .house__moreDetail#houseQA .qaBox .line {
+                position: relative;
+                width: 100%;
+                height: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                display: inline-block;
+                vertical-align: middle;
+                height: 1px;
+                margin: 10px 0 20px 0;
+                background-color: #f8f8f8
+            }
+
+    .house__stickBtm.mShow.rent {
+        /*H_ed
+        display: block;
+        
+        background-color: #eb623c;*/
+        display: flex;
+        background-color: var(--cnvs-themecolor);
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+        .house__stickBtm.mShow.rent a {
+            /*H_ed
+            width: 50%;*/
+            display: flex;
+            flex: 1 0 0;
+            justify-content: center;
+            max-width: 25%;
+            width: fit-content;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /*H_ed
+            border-color: #f5b19e*/
+            border-color: white;
+            background: none;
+        }
+        /*H_add*/
+        .house__stickBtm.mShow.rent > .house__func {
+            display: flex;
+            height: 30px;
+            border-right: solid 1px white;
+        }
+            /*H_add*/
+            .house__stickBtm.mShow.rent > .house__func > .btn3 {
+                max-width: 100%;
+                line-height: 30px;
+                height: 30px;
+            }
+
+                .house__stickBtm.mShow.rent > .house__func > .btn3 > .heartI {
+                    background: none;
+                    padding: 0px;
+                }
+        /*H_add*/
+        .house__stickBtm.mShow.rent a > span {
+            display: flex;
+            gap: 0.2rem;
+            padding:0;
+        }
+
+    .popup.rent .popup__con .report {
+        padding: 4.6875vw
+    }
+
+        .popup.rent .popup__con .report li .rt.r100 {
+            padding-left: 0;
+            margin-top: 9.375vw
+        }
+
+            .popup.rent .popup__con .report li .rt.r100 a {
+                font-size: 3.75vw;
+                line-height: 3.75vw;
+                width: 32%;
+                margin-right: 1%;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                float: left;
+                padding: 2.34375vw 2.34375vw;
+                text-align: center
+            }
+
+    .popup.rent .popup__con .code_box {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5%
+    }
+
+        .popup.rent .popup__con .code_box .lt {
+            width: 49%;
+            margin-right: 1%;
+            float: left
+        }
+
+            .popup.rent .popup__con .code_box .lt .pic {
+                width: 100%
+            }
+
+                .popup.rent .popup__con .code_box .lt .pic img {
+                    max-width: 100%
+                }
+
+        .popup.rent .popup__con .code_box .rt {
+            float: left;
+            width: 49%;
+            margin-right: 0
+        }
+
+            .popup.rent .popup__con .code_box .rt .code {
+                width: 100%
+            }
+
+    .popup.rent input.ipt5:focus {
+        color: #eb623c;
+        border-color: #eb623c
+    }
+
+    .house__mTopRow {
+        /* H_ed
+        font-size: 12px;
+        padding: 10px 0;
+        line-height: 21px;
+        overflow: hidden*/
+        font-size: var(--ct-t-small);
+        padding: 0.5rem 0;
+        display: flex;
+    }
+
+        .house__mTopRow .mTopRow__col {
+            float: left;
+            color: var(--cnvs-contrast-600);
+            padding: 0 10px
+        }
+
+            .house__mTopRow .mTopRow__col:nth-child(1) {
+                /*H_ed
+                color: #2f2f2f;*/
+                border-right: 1px solid #ececec
+            }
+
+                .house__mTopRow .mTopRow__col:nth-child(1).global {
+                    border: 0
+                }
+
+        .house__mTopRow .txt--tel1 {
+            display: inline-block;
+            padding-right: 25px;
+            background-image: url(../images/m/icon_phone1.png);
+            background-position: right 0;
+            background-repeat: no-repeat;
+            background-size: 21px 21px
+        }
+
+            .house__mTopRow .txt--tel1 b {
+                color: #44b1ae
+            }
+
+            .house__mTopRow .txt--tel1:hover {
+                text-decoration: none
+            }
+
+        .house__mTopRow .house__id {
+            position: relative;
+            width: 100%;
+            height: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 7.5vw;
+            line-height: 7.8125vw;
+            font-weight: bolder;
+            font-family: Arial, "微軟正黑體";
+            color: #16a2a3;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 4.6875vw
+        }
+
+    .house__detail .detail__intro {
+        /*H_ed 
+        padding-bottom: 15px;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--cnvs-contrast-300);
+        padding-bottom: 1rem;
+    }
+
+        .house__detail .detail__intro .intro__item {
+            /*H_ed
+            border-bottom: 1px solid #dcdcdc;
+            padding: 10px;
+            overflow: hidden*/
+            display: flex;
+            min-width: 45%;
+            align-items: flex-end;
+            gap: 0.5rem;
+            border:none;
+            padding:0!important;
+        }
+    .house.rent .house__call.mShow:before{
+        display:none;
+    }
+    .popup-bg {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .popup-bg > .popup {
+            display: flex !important;
+            width: 70%;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: auto;
+            top: auto;
+        }
+}
+
+/*1280解析度以下----------------------------------------------------*/
+@media (max-width: 1280px) {
+    .content {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .house__mainRow {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+}
+
+
+/*1080解析度以下----------------------------------------------------*/
+@media (max-width: 1024px) {
+    .content {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .house__mainRow {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .intro-section {
+        gap: 0.3rem;
+        max-width: 40%;
+    }
+
+    .object-intro-info {
+        font-size: 1rem;
+    }
+
+    .check-time-func-group {
+        gap: 5px;
+    }
+
+    .check-item-group {
+        gap: 5px;
+    }
+
+    .detail-photo-section > img {
+        max-width: 47%;
+    }
+   
+}
+
+/*Pad版*/
+@media (max-width:900px) {
+    .content {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .house__mainRow {
+        font-family: var(--cnvs-primary-font) !important;
+        display: flex;
+        gap: 1rem;
+    }
+    .topRow__right{
+        display:flex;
+        flex:1 1 0;
+    }
+    .house__topRow .topRow__right{
+        max-width:30%;
+    }
+
+    .price-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .stickBar__nav li a {
+        padding: 0 5px;
+    }
+    .popup-bg {
+        display: flex !important;
+        align-items: center;
+        justify-content:center;
+    }
+        .popup-bg > .popup {
+            display: flex !important;
+            width: 80%;
+            padding: 0;
+            margin: 0;
+            position:absolute;
+            left:auto;
+            top:auto;
+        }
+
+
+}
+/*手機板-----------------------------------------*/
+@media (max-width: 768px) {
+    .content {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .house__mainRow {
+        font-family: var(--cnvs-primary-font) !important;
+    }
+
+    .photo-section {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .main-photo {
+        display: flex;
+        flex: 1 0 0;
+        width: 100%;
+    }
+
+    .photo-dot-section {
+        display: flex;
+        padding: 10px var(--rem-1-rem, 16px);
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    .photo-dot {
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+
+    .photo-dot-current {
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--ct-orange);
+    }
+
+    .title-info-section {
+        display: flex;
+        padding: 1rem 0.5rem;
+        border-bottom: 1px solid var(--cnvs-contrast-300);
+        font-family: var(--bs-body-font-family);
+    }
+
+    .object-title {
+        font-size: var(--ct-t-5);
+    }
+
+    .object-address-section {
+        font-size: var(--ct-t-basic);
+        padding-left: 3px;
+    }
+
+    .object-title-section {
+        display: flex;
+        gap: 0.2rem;
+    }
+
+    .object-address {
+        font-size: var(--ct-t-basic);
+    }
+    .price-info {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 0.1rem;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        gap: 0.5rem;
+        justify-content: center;
+        padding-right: 0.2rem;
+    }
+
+        .price-info > span {
+            display: flex;
+            line-height: 1.75rem;
+        }
+    .mainRow__right .house__booking .timeRow {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+    .pricediv {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-section {
+        max-width: 100%;
+    }
+
+    .object-detail-section {
+        gap: 0.5rem;
+    }
+
+    .object-intro-info {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .object-intro-item {
+        display: flex;
+        flex: 1 0 0;
+        min-width: 45%;
+    }
+
+    .detail-row {
+        gap: 0;
+    }
+
+    .detail-text-content {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .detail-row {
+        font-size: var(--ct-t-basic);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+        padding: 0 0 0.5rem 0;
+        line-height: 2rem;
+    }
+
+    .detail-item {
+        padding: 0.5rem;
+        min-width: fit-content;
+    }
+
+    .detail-row > .rent_type_item {
+        display: flex;
+        min-width: 45%;
+    }
+
+    .detail-photo-section {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        gap: 1rem;
+    }
+
+        .detail-photo-section > img {
+            max-width: 100%;
+        }
+
+    .detail-row-title {
+        font-size: var(--ct-t-6);
+    }
+
+    .house__stickBtm {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /*H_ed  height: 50px;*/
+        height: 50px;
+        line-height: 30px;
+        padding: 5px 0;
+        background-color: #44b1ae;
+        overflow: hidden;
+        z-index: 48
+    }
+
+        .house__stickBtm a {
+            display: block;
+            float: left;
+            color: #fff;
+            width: 33%;
+            /*H_ed
+            font-size: 12px;*/
+            font-size: var(--ct-t-basic);
+            text-align: center;
+            border-right: 1px solid #a2d8d7
+        }
+            /*H_ed
+            .house__stickBtm a span {
+                display: inline-block;
+                padding: 0 25px 0 0;
+                background-repeat: no-repeat;
+                background-position: right center
+            }*/
+
+            .house__stickBtm a:last-child {
+                border: none
+            }
+
+        .house__stickBtm .reducedBtn span {
+            background-image: url(../images/m/icon_reduced.png);
+            background-size: 17px 21px;
+            background-position: right 6px
+        }
+
+        .house__stickBtm .preorderBtn span {
+            /*H_ED*/
+            background-image: none;
+            background-size: 15px 18px
+        }
+
+        .house__stickBtm .preorderBtn.global_list_detail {
+            width: 100%
+        }
+
+            .house__stickBtm .preorderBtn.global_list_detail span {
+                background-image: url(../images/m/icon_phone2.png);
+                background-size: 15px 18px
+            }
+
+        .house__stickBtm .callBtn span {
+            /*H_ED*/
+            background-image: none;
+            background-size: 17px 20px;
+        }
+
+        .house__stickBtm .callBtn.newhome {
+            width: 100%
+        }
+
+            .house__stickBtm .callBtn.newhome span {
+                background-image: url(../images/m/icon_phone2.png);
+                background-size: 17px 20px
+            }
+
+    .house__leftStickBtm {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 33%;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 0;
+        background-color: #44b1ae;
+        overflow: hidden;
+        z-index: 48
+    }
+
+        .house__leftStickBtm a {
+            display: block;
+            float: left;
+            color: #fff;
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+            border-right: 1px solid #a2d8d7
+        }
+
+            .house__leftStickBtm a span {
+                display: inline-block;
+                padding: 0 25px 0 0;
+                background-repeat: no-repeat;
+                background-position: right center
+            }
+
+            .house__leftStickBtm a:last-child {
+                border: none
+            }
+
+        .house__leftStickBtm .reducedBtn span {
+            background-image: url(../images/m/icon_reduced.png);
+            background-size: 17px 21px;
+            background-position: right 6px
+        }
+
+    .house__middleStickBtm {
+        position: fixed;
+        bottom: 0;
+        left: 33%;
+        width: 34%;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 0;
+        background-color: #EE6C4A;
+        overflow: hidden;
+        z-index: 49
+    }
+
+        .house__middleStickBtm a {
+            display: block;
+            float: left;
+            color: #fff;
+            width: 100%;
+            font-size: 19px;
+            text-align: center;
+            border-right: 1px solid #a2d8d7
+        }
+
+        .house__middleStickBtm .preorderBtn span {
+            background-color: #EE6C4A;
+            background-size: 15px 18px
+        }
+
+    .house__middleStickBtmV2 {
+        position: fixed;
+        bottom: 0;
+        left: 33%;
+        width: 34%;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 0;
+        background-color: #EE6C4A;
+        overflow: hidden;
+        z-index: 49
+    }
+
+        .house__middleStickBtmV2 a {
+            display: block;
+            float: left;
+            color: #fff;
+            width: 100%;
+            font-size: 19px;
+            text-align: center;
+            border-right: 1px solid #a2d8d7
+        }
+
+        .house__middleStickBtmV2 .preorderBtn span {
+            background-color: #EE6C4A;
+            background-size: 15px 18px
+        }
+
+    .house__rightStickBtm {
+        position: fixed;
+        bottom: 0;
+        left: 67%;
+        width: 33%;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 0;
+        background-color: #44b1ae;
+        overflow: hidden;
+        z-index: 50
+    }
+
+        .house__rightStickBtm a {
+            display: block;
+            float: left;
+            color: #fff;
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+            border-right: 1px solid #a2d8d7
+        }
+
+            .house__rightStickBtm a span {
+                display: inline-block;
+                padding: 0 25px 0 0;
+                background-repeat: no-repeat;
+                background-position: right center
+            }
+
+            .house__rightStickBtm a:last-child {
+                border: none
+            }
+
+        .house__rightStickBtm .callBtn span {
+            background-image: url(../images/m/icon_phone2.png);
+            background-size: 17px 20px;
+            background-position: right 6px
+        }
+
+        .house__rightStickBtm .callBtn.newhome {
+            width: 100%
+        }
+
+            .house__rightStickBtm .callBtn.newhome span {
+                background-image: url(../images/m/icon_phone2.png);
+                background-size: 17px 20px;
+                background-position: right 6px
+            }
+}
+@media (max-width: 680px) {
+    .house__stickBtm > a > span>i{
+        display:none;
+    }
+    .house__func > a > span > .fa-solid {
+        display: none;
+    }
+}

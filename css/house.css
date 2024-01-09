@@ -1,0 +1,275 @@
+/* ----------------------------------------------------------------
+買屋明細使用的CSS
+-----------------------------------------------------------------*/
+body{
+    font-family:var(--cnvs-primary-font);
+    color:var(--cnvs-contrast-600);
+    font-size:var(--ct-t-basic);
+}
+.breadcrumb > .wrapper-1176 {
+    width: 100%;
+    max-width:100%;
+    padding: 5px 0 !important;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.title-info-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+    align-items: center;
+    padding: 0px;
+    font-family: var(--bs-body-font-family) !important;
+    height: 100px;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+    .title-info-section .house__qrcode .qrcode__img {
+        height: 80px;
+        width: 80px;
+        display: flex;
+        position: unset;
+        border: solid 1px var(--cnvs-contrast-300);
+    }
+.detail-photo-section > .imgLiquidFill {
+    display: flex;
+    max-width:47%;
+    flex:1 0 0;
+}
+.detail-photo-section > .imgLiquidFill>img {
+    display:flex;
+    flex: 1 0 0;
+    height:100%;
+}
+.detail-col{
+    display:flex;
+    flex-direction:column;
+}
+/*內頁的試算、謄本資料，先不顯示，等套上新CSS再顯示*/
+.borderBtn{
+    display:none;
+    line-height:unset;
+}
+/* ----------------------------------------------------------------
+原程式使用的CSS
+-----------------------------------------------------------------*/
+@media screen and (max-width: 759px) {
+    .house__detail .detail__type .type__item .item__td .borderBtn {
+        color: #fff;
+        border: 3px solid #44b1ae;
+        background-color: #44b1ae;
+        margin: 0;
+    }
+
+    .mainRow__left .house__func {
+        position: inherit;
+    }
+
+    .mainRow__left .gallery__top .swiper-button-prev, .mainRow__left .gallery__top .swiper-button-next {
+        top: 50%;
+    }
+    /*2020-06-10 By Johnson @ Xpert 隱藏業務回電按鈕 start*/
+    .house .item__btnbar .gtm-preorder-submit:nth-child(2) {
+        display: none !important;
+    }
+
+    .house .popup__con .item__btn1.red {
+        margin-right: 2%;
+    }
+
+        .house .popup__con .item__btn1.red:nth-child(2) {
+            display: none !important;
+        }
+
+    .house .popup .popup__wrap .con__wrap {
+        height: -webkit-calc(90vh - 45px);
+        height: calc(90vh - 45px);
+        margin-top: 0;
+    }
+    /*2020-06-10 By Johnson @ Xpert 隱藏業務回電按鈕 end*/
+    /*2020-06-12 By Amanda @ Xpert: 更新編碼 */
+}
+
+.house__detail .detail__type .type__item .item__td .borderBtn {
+    margin-left: 5px;
+}
+
+a.borderBtn {
+    display: none;
+    /*H_ed
+    color: #50504d;
+    font-size: 13px;
+    border: 3px solid #d6d6d6;
+    padding: 0 5px;
+    height: 20px;*/
+    line-height: 30px;
+}
+.iconItem img{
+    margin-top:6px;
+}
+/*20200417 Johnson @ Xpert 新增pcShow-popup 關閉按鈕*/
+.pcShow-popup {
+}
+
+    .pcShow-popup .xBtn {
+        width: 40px;
+        height: 47px;
+        top: -48px;
+        background: #f14351 url(../images/btn_xBtn.png) center no-repeat;
+        right: -3px;
+    }
+
+        .pcShow-popup .xBtn:hover {
+            background: #e60012 url(../images/btn_xBtn.png) center no-repeat;
+        }
+
+.posting {
+    opacity: .7;
+    pointer-events: none
+}
+
+/*layout_tmp 覆蓋設定*/
+.breadcrumb a {
+    color: var(--cnvs-contrast-500);
+}
+.photo-section .gallery__thumbs {
+    /*H-ed
+        height: 55px*/
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    max-width:100%;
+    overflow:hidden;
+}
+
+    .photo-section .gallery__thumbs .swiper-slide {
+        width: 72px;
+        height: 54px;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .photo-section .gallery__thumbs .swiper-slide-active {
+        opacity: 1
+    }
+.introRow__item{
+    border-top:none!important;
+}
+.stickBar {
+    border-top: 4px solid var(--cthouse-green);
+}
+.stickBar > .stickBar__top {
+    background-color: var(--cnvs-themecolor);
+}
+    .stickBar > .stickBar__top > .wrapper-1176 {
+        max-width: 1296px !important;
+    }
+    .stickBar > .stickBar__top > .wrapper-1176 > .floatTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--bs-font-sans-serif);
+        line-height:30px;
+        height:100%;
+        margin:3px;
+        padding:0;
+    }
+        .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__left {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            font-size: var(--ct-t-basic);
+            gap: 0.5rem;
+            align-items: center;
+        }
+            .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__left > .stickBar__name {
+                display: flex;
+                font-size: var(--ct-t-6);
+                align-items: center;
+                margin-bottom: 2px;
+                height:30px;
+            }
+            .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__left > .stickBar__price {
+                display: flex;
+                margin: 0;
+                font-size: var(--ct-t-6);
+                margin-bottom: 2px;
+                margin-left: 0.5rem;
+                height: 30px;
+            }
+                .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__left > .stickBar__price > b {
+                    font-size: unset;
+                }
+        .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__right > {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            padding: 5px 0;
+        }
+            .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__right > .stickBar__save {
+                border-left: solid 1px white;
+                border-right: solid 1px white;
+                padding: 0 0.2rem;
+                height: 35px;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                font-size:var(--ct-t-6)
+            }
+            .stickBar > .stickBar__top > .wrapper-1176 > .floatTop > .top__right > .stickBar-interest {
+                background-color:transparent;
+            }
+.house__introRow{
+    padding-bottom:unset;
+}
+.house__introRow .introRow__item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    align-items: flex-end;
+    font-size: var(--ct-t-basic);
+    padding:unset;
+}
+    .house__introRow .introRow__item > .item__th {
+        display: flex;
+        color: var(--cnvs-themecolor);
+        margin-bottom: 1px;
+        margin-right: 0.5rem;
+        font-size: var(--ct-t-basic);
+        justify-content:flex-end;
+        position:unset;
+    }
+    .house__introRow .introRow__item > .item__td {
+        display: flex;
+        margin-bottom: 1px;
+        gap:0.2rem;
+    }
+
+.house__introRow .introRow__item{
+    line-height:unset;
+}
+    .house__introRow .introRow__item .item__td{
+        padding:unset;
+        float:unset;
+    }
+        .house__introRow .introRow__item .item__td b {
+            font-size: var(--ct-t-6);
+            color: var(--cnvs-contrast-800);
+        }
+    .house__introRow .introRow__item:first-child{
+        padding:unset;
+    }
+        .house__introRow .introRow__item:first-child .item__th{
+            line-height:unset;
+        }
+    .house__introRow .introRow__item .item__th{
+        width:unset;
+    }
+
+
